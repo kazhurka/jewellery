@@ -1,6 +1,4 @@
-h1 {
-  font-family: 'Cormorant Garamond';
-  font-weight: bold;
-}
-
+@import "variables.scss";
 @import "visually-hidden.scss";
+@import "blocks/main-header.scss";
+@import "global.scss";
