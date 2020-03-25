@@ -1,0 +1,30 @@
+.company-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-info__link {
+  margin-bottom: 25px;
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+}
+
+.company-info__link:hover {
+  opacity: 70%;
+}
+
+.company-info__link:active {
+  opacity: 50%;
+}
+
+.company-info__link:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .company-info {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}

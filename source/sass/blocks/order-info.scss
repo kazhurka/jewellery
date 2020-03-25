@@ -1,0 +1,23 @@
+.order-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-info__link {
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.order-info__link:hover {
+  opacity: 70%;
+}
+
+.order-info__link:active {
+  opacity: 50%;
+}
+
+.order-info__link:last-child {
+  margin-bottom: 0;
+}
