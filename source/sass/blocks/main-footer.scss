@@ -1,11 +1,11 @@
 .main-footer {
   min-width: 1024px;
-  max-width: 1366px;
-  box-sizing: border-box;
+  max-width: 1170px;
+  box-sizing: content-box;
   padding-top: 100px;
   padding-bottom: 100px;
-  padding-left: 7%;
-  padding-right: 7%;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 0 auto;
   display: flex;
   background-color: #000000;
@@ -20,8 +20,8 @@
 
 @media (max-width: $desktop-width) {
   .main-footer {
-    padding-left: 5, 8%;
-    padding-right: 5, 8%;
+    padding-left: 5.8%;
+    padding-right: 5.8%;
     flex-wrap: wrap;
     min-width: 768px;
     max-width: 1024px;
@@ -30,8 +30,8 @@
 
 @media (max-width: $tablet-width) {
   .main-footer {
-    padding-left: 4, 6%;
-    padding-right: 4, 6%;
+    padding-left: 4.6%;
+    padding-right: 4.6%;
     min-width: 320px;
     max-width: 768px;
   }
