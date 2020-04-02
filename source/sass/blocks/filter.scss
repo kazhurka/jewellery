@@ -1,0 +1,129 @@
+.filter {
+  width: 250px;
+  min-height: 460px;
+}
+
+
+.filter__group {
+  border: 1px solid #A87B62;
+  box-sizing: border-box;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 25px;
+  position: relative;
+  width: 250px;
+  border-bottom: none;
+
+  ;
+}
+
+.filter__group:last-of-type {
+  border-bottom: 1px solid #A87B62;
+  margin-bottom: 30px;
+}
+
+
+.filter__group--active .filter__header {
+  margin-bottom: 30px;
+}
+
+.filter__header {
+  list-style: none;
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.filter label {
+  position: relative;
+}
+
+.filter__checkbox:checked+label::before {
+  background-color: #A87B62;
+}
+
+.filter label::before {
+  left: -25px;
+  top: 2px;
+  position: absolute;
+  box-sizing: border-box;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 1px solid #A87B62;
+}
+
+.filter__list li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
+
+.filter__list li:last-child {
+  margin-bottom: 0;
+}
+
+.filter__button {
+  right: 25px;
+  position: absolute;
+  width: 16px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter__button--up {
+  top: 30px;
+  display: none;
+}
+
+.filter__button--down {
+  top: 30px;
+  background-image: url("../../img/arrow-bottom-icon.svg");
+}
+
+.filter__group--active .filter__button--up {
+  background-image: url("../../img/arrow-top-icon.svg");
+  display: block;
+}
+
+.filter__group--active .filter__button--down {
+  display: none;
+}
+
+.filter__submit {
+  margin-bottom: 30px;
+  width: 250px;
+  height: 68px;
+  background: #A87B62;
+  border: 1px solid #A87B62;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.filter__reset {
+  display: block;
+  margin: 0 auto 60px;
+  text-decoration: none;
+  font-family: "Poppins","Arial",sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1d1613;
+  border-bottom: 1px solid #a87b62;
+}

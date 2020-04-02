@@ -1,0 +1,85 @@
+.range {
+  margin: 0 auto;
+}
+.range__wrap {
+  position: relative;
+}
+.range__price {
+  text-align: center;
+  color: black;
+
+  background-color:transparent;
+}
+
+.range__price-wrap {
+  margin: 0 auto;
+  display: flex;
+  width: 175px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.range__price input {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  vertical-align: middle;
+  text-align: center;
+  color: black;
+
+  background: none;
+  border: none;
+}
+
+
+.range__scale {
+  position: relative;
+
+  width: 200px;
+  height: 1px;
+
+  background: #F0EAE4;
+}
+
+.range__bar {
+position: absolute;
+  width: 90px;
+  height: 1px;
+  left: 60px;
+  background-color: #A87B62;
+}
+
+
+.range__toggle--min {
+  position: absolute;
+  top: -7px;
+  left: 55px;
+
+  width: 20px;
+  height: 22px;
+
+  background-color: transparent;
+  background-image: url("../../img/toggle-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.range__toggle--max{
+  position: absolute;
+  top: -7px;
+  left: 136px;
+
+  width: 20px;
+  height: 22px;
+
+  background-color: transparent;
+  background-image: url("../../img/toggle-icon.svg");
+  background-repeat: no-repeat;
+}
+
