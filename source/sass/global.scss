@@ -32,3 +32,31 @@ body {
   line-height: 44px;
   color: #ffffff;
 }
+
+.catalog-container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+}
+
+@media (max-width: $desktop-width)  {
+.catalog-container {
+  box-sizing: border-box;
+  width: 768px;
+  min-width: 768px;
+  padding-left: 45px;
+  padding-right: 45px;
+  flex-direction: column;
+}
+}
+
+@media(max-width: $tablet-width) {
+  .catalog-container {
+    width: 320px;
+    min-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

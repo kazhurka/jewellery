@@ -64,66 +64,220 @@
         </p>
       </div>
     </div>
+    <div class="catalog-container">
 
-    <div class="filter">
-      <form class="filter__form">
-        <h2 class="visually-hidden">Filters</h2>
-        <div class="filter__group filter__group--active">
-          <button type="button" class="button filter__button filter__button--up"></button>
-          <button type="button" class="button filter__button filter__button--down"></button>
-          <h3 class="filter__header">Product</h3>
-          <ul class="filter__list">
-            <li><input type="checkbox" class="filter__checkbox visually-hidden" name="necklaces" id="filter-necklases">
-              <label for="filter-necklases">Necklaces</label>
-            </li>
-            <li><input type="checkbox" class="filter__checkbox visually-hidden" name="chokers" id="filter-chokers">
-              <label for="filter-chokers">Chokers</label>
-            </li>
-            <li><input type="checkbox" class="filter__checkbox visually-hidden" name="rings" id="filter-rings">
-              <label for="filter-rings">Rings</label>
-            </li>
-            <li><input type="checkbox" class="filter__checkbox visually-hidden" name="earrings" id="filter-earrings">
-              <label for="filter-earrings">Earrings</label>
-            </li>
-          </ul>
-        </div>
-        <div class="filter__group">
-          <button type="button" class="button filter__button filter__button--up"></button>
-          <button type="button" class="button filter__button filter__button--down"></button>
-          <h3 class="filter__header">Material</h3>
-        </div>
-        <div class="filter__group">
-          <button type="button" class="button filter__button filter__button--up"></button>
-          <button type="button" class="button filter__button filter__button--down"></button>
-          <h3 class="filter__header">Collection</h3>
-        </div>
-        <div class="filter__group filter__group--active">
-          <button type="button" class="button filter__button filter__button--up"></button>
-          <button type="button" class="button filter__button filter__button--down"></button>
-          <h3 class="filter__header">Price</h3>
-          <div class="range">
-            <div class="range__wrap">
-              <div class="range__scale">
-                <div class="range__bar"></div>
-              </div>
-              <div class="range__toggle range__toggle--min "></div>
-              <div class="range__toggle range__toggle--max "></div>
-            </div>
-            <div class="range__price-wrap">
-              <div class="range__price range__price--min">
-                <input type="text" name="min-price" value="$55">
-              </div>
-              <div class="range__price range__price--max">
-                <input type="text" name="max-price" value="$155">
-              </div>
-            </div>
-
+      <div class="filter ">
+        <button class="button filter__open-button">Filter</button>
+        <button class="button filter__close-button"></button>
+        <form class="filter__form">
+          <h2 class="visually-hidden">Filters</h2>
+          <div class="filter__group filter__group--active">
+            <button type="button" class="button filter__button filter__button--up"></button>
+            <button type="button" class="button filter__button filter__button--down"></button>
+            <h3 class="filter__header">Product</h3>
+            <ul class="filter__list">
+              <li><input type="checkbox" class="filter__checkbox visually-hidden" name="necklaces" id="filter-necklases">
+                <label for="filter-necklases">Necklaces</label>
+              </li>
+              <li><input type="checkbox" class="filter__checkbox visually-hidden" name="chokers" id="filter-chokers">
+                <label for="filter-chokers">Chokers</label>
+              </li>
+              <li><input type="checkbox" class="filter__checkbox visually-hidden" name="rings" id="filter-rings">
+                <label for="filter-rings">Rings</label>
+              </li>
+              <li><input type="checkbox" class="filter__checkbox visually-hidden" name="earrings" id="filter-earrings">
+                <label for="filter-earrings">Earrings</label>
+              </li>
+            </ul>
           </div>
+          <div class="filter__group">
+            <button type="button" class="button filter__button filter__button--up"></button>
+            <button type="button" class="button filter__button filter__button--down"></button>
+            <h3 class="filter__header">Material</h3>
+          </div>
+          <div class="filter__group">
+            <button type="button" class="button filter__button filter__button--up"></button>
+            <button type="button" class="button filter__button filter__button--down"></button>
+            <h3 class="filter__header">Collection</h3>
+          </div>
+          <div class="filter__group filter__group--active">
+            <button type="button" class="button filter__button filter__button--up"></button>
+            <button type="button" class="button filter__button filter__button--down"></button>
+            <h3 class="filter__header">Price</h3>
+            <div class="range">
+              <div class="range__wrap">
+                <div class="range__scale">
+                  <div class="range__bar"></div>
+                </div>
+                <div class="range__toggle range__toggle--min "></div>
+                <div class="range__toggle range__toggle--max "></div>
+              </div>
+              <div class="range__price-wrap">
+                <div class="range__price range__price--min">
+                  <input type="text" name="min-price" value="$55">
+                </div>
+                <div class="range__price range__price--max">
+                  <input type="text" name="max-price" value="$155">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <button type="submit" class=" button filter__submit">Apply</button>
+          <button type="reset" class="button filter__reset">Clear All</button>
+        </form>
+      </div>
+      <div class="goods">
+        <ul class="goods__list">
+          <li class="goods__item">
+            <a>
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/double-pearl-earrings__mobile.png 1x, img/double-pearl-earrings__mobile@2x.png 2x">
+                <source media="(max-width: 1024px)" srcset="img/double-pearl-earrings__tablet.png 1x, img/double-pearl-earrings__tablet@2x.png 2x">
+                <img class=" goods__img" src="img/double-pearl-earrings__desktop.png" srcset="img/double-pearl-earrings__desktop@2x.png 2x" alt="Double pearl earrings">
+              </picture>
+            </a>
+            <h3 class="goods__name">Double pearl earrings</h3>
+            <p class="goods__price">$ 115</p>
+          </li>
+          <li class="goods__item">
+            <a>
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/black-choker-gold-bead__mobile.png 1x, img/black-choker-gold-bead__mobile@2x.png 2x">
+                <source media="(max-width: 1024px)" srcset="img/black-choker-gold-bead__tablet.png 1x, img/black-choker-gold-bead__tablet@2x.png 2x">
+                <img class=" goods__img" src="img/black-choker-gold-bead__desktop.png" srcset="img/black-choker-gold-bead__desktop@2x.png 2x" alt="Choker with gold bead">
+              </picture>
+            </a>
+            <h3 class="goods__name">Choker with gold bead</h3>
+            <p class="goods__price">$ 55</p>
+          </li>
+          <li class="goods__item">
+            <a>
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/gold-layered-necklace__mobile.png 1x, img/gold-layered-necklace__mobile@2x.png 2x">
+                <source media="(max-width: 1024px)" srcset="img/gold-layered-necklace__tablet.png 1x, img/gold-layered-necklace__tablet@2x.png 2x">
+                <img class=" goods__img" src="img/gold-layered-necklace__desktop.png" srcset="img/gold-layered-necklace__desktop@2x.png 2x" alt="Gold layered necklace">
+              </picture>
+            </a>
+            <h3 class="goods__name">Gold layered necklace</h3>
+            <p class="goods__price">$155</p>
+          </li>
+          <li class="goods__item">
+            <a>
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/blue-gemstone-pendant__mobile.png 1x, img/blue-gemstone-pendant__mobile@2x.png 2x">
+                <source media="(max-width: 1024px)" srcset="img/blue-gemstone-pendant__tablet.png 1x, img/blue-gemstone-pendant__tablet@2x.png 2x">
+                <img class=" goods__img" src="img/blue-gemstone-pendant__desktop.png" srcset="img/blue-gemstone-pendant__desktop@2x.png 2x" alt="Blue gemstone pendant">
+              </picture>
+            </a>
+            <h3 class="goods__name">Blue gemstone pendant</h3>
+            <p class="goods__price">$105</p>
+          </li>
+          <li class="goods__item">
+            <a>
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/boho-earrings__mobile.png 1x, img/boho-earrings__mobile@2x.png 2x">
+                <source media="(max-width: 1024px)" srcset="img/boho-earrings__tablet.png 1x, img/boho-earrings__tablet@2x.png 2x">
+                <img class=" goods__img" src="img/boho-earrings__desktop.png" srcset="img/boho-earrings__desktop@2x.png 2x" alt=" Boho earrings">
+              </picture>
+            </a>
+            <h3 class="goods__name"> Boho earrings</h3>
+            <p class="goods__price">$75</p>
+          </li>
+          <li class="goods__item">
+            <a>
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/bird-necklace__mobile.png 1x, img/bird-necklace__mobile@2x.png 2x">
+                <source media="(max-width: 1024px)" srcset="img/bird-necklace__tablet.png 1x, img/bird-necklace__tablet@2x.png 2x">
+                <img class=" goods__img" src="img/bird-necklace__desktop.png" srcset="img/bird-necklace__desktop@2x.png 2x" alt="Gold bird necklace">
+              </picture>
+            </a>
+            <h3 class="goods__name">Gold bird necklace</h3>
+            <p class="goods__price">$75</p>
+          </li>
+          <li class="goods__item">
+            <a>
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/black-leather-choker-necklace__mobile.png 1x, img/black-leather-choker-necklace__mobile@2x.png 2x">
+                <source media="(max-width: 1024px)" srcset="img/black-leather-choker-necklace__tablet.png 1x, img/black-leather-choker-necklace__tablet@2x.png 2x">
+                <img class=" goods__img" src="img/black-leather-choker-necklace__desktop.png" srcset="img/black-leather-choker-necklace__desktop@2x.png 2x" alt="Black leather choker">
+              </picture>
+            </a>
+            <h3 class="goods__name">Black leather choker</h3>
+            <p class="goods__price">$85</p>
+          </li>
+          <li class="goods__item">
+            <a>
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/purple-gemstone-necklace__mobile.png 1x, img/purple-gemstone-necklace__mobile@2x.png 2x">
+                <source media="(max-width: 1024px)" srcset="img/purple-gemstone-necklace-catalog__tablet.png 1x, img/purple-gemstone-necklace-catalog__tablet@2x.png 2x">
+                <img class=" goods__img" src="img/purple-gemstone-necklace__desktop.png" srcset="img/purple-gemstone-necklace__desktop@2x.png 2x" alt=" Necklace with amethyst">
+              </picture>
+            </a>
+            <h3 class="goods__name"> Necklace with amethyst</h3>
+            <p class="goods__price">$145</p>
+          </li>
+          <li class="goods__item">
+            <a>
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/elephant-earrings__mobile.png 1x, img/elephant-earrings__mobile@2x.png 2x">
+                <source media="(max-width: 1024px)" srcset="img/elephant-earrings__tablet.png 1x, img/elephant-earrings__tablet@2x.png 2x">
+                <img class="goods__img" src="img/elephant-earrings__desktop.png" srcset="img/elephant-earrings__desktop@2x.png 2x" alt="Elephant earrings">
+              </picture>
+            </a>
+            <h3 class="goods__name">Elephant earrings</h3>
+            <p class="goods__price">$145</p>
+          </li>
+          <li class="goods__item">
+            <a>
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/threader-necklace-closeup__mobile.png 1x, img/threader-necklace-closeup__mobile@2x.png 2x">
+                <source media="(max-width: 1024px)" srcset="img/threader-necklace-closeup__tablet.png 1x, img/threader-necklace-closeup__tablet@2x.png 2x">
+                <img class=" goods__img" src="img/threader-necklace-closeup__desktop.jpg" srcset="img/threader-necklace-closeup__desktop@2x.png 2x" alt="Threader necklace">
+              </picture>
+            </a>
+            <h3 class="goods__name"> Threader necklace</h3>
+            <p class="goods__price">$115</p>
+          </li>
+          <li class="goods__item">
+            <a>
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/origami-crane-necklace__mobile.png 1x, img/origami-crane-necklace__mobile@2x.png 2x">
+                <source media="(max-width: 1024px)" srcset="img/origami-crane-necklace__tablet.png 1x, img/origami-crane-necklace__tablet@2x.png 2x">
+                <img class=" goods__img" src="img/origami-crane-necklace__desktop.png" srcset="img/origami-crane-necklace__desktop@2x.png 2x" alt="Origami crane necklace">
+              </picture>
+            </a>
+            <h3 class="goods__name"> Origami crane necklace</h3>
+            <p class="goods__price">$105</p>
+          </li>
+          <li class="goods__item">
+            <a>
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/marble-earrings__mobile.png 1x, img/marble-earrings__mobile@2x.png 2x">
+                <source media="(max-width: 1024px)" srcset="img/marble-earrings__tablet.png 1x, img/marble-earrings__tablet@2x.png 2x">
+                <img class=" goods__img" src="img/marble-earrings__desktop.png" srcset="img/marble-earrings__desktop@2x.png 2x" alt="Origami crane necklace">
+              </picture>
+            </a>
+            <h3 class="goods__name"> Marble earrings</h3>
+            <p class="goods__price">$95</p>
+          </li>
+        </ul>
+        <div class="goods__navigation">
+          <a href="#" class="goods__nav-link">Previous</a>
+          <ul class="goods__pages">
+            <li> <a class="goods__page goods__page--active" href="#">1</a></li>
+            <li><a class="goods__page" href="#">2</a></li>
+            <li><a class="goods__page" href="#">3</a></li>
+            <li><a class="goods__page goods__page--hidden" href="#">4</a></li>
+            <li><a class="goods__page goods__page--hidden" href="#">5</a></li>
+          </ul>
+          <a href="#" class="goods__nav-link">Next</a>
         </div>
-        <button type="submit" class=" button filter__submit">Apply</button>
-        <button type="reset" class="button filter__reset">Clear All</button>
-      </form>
+
+
+      </div>
     </div>
+    
   </main>
   <div class="wrap-bg">
     <footer class="main-footer">
@@ -175,6 +329,21 @@
         headerMain.classList.add('main-header--open');
       }
     });
+
+    var filterOpenButton = document.querySelector('.filter__open-button');
+    var filter = document.querySelector('.filter');
+    var filterCloseButton = document.querySelector('.filter__close-button')
+    filter.classList.remove("filter--no-js");
+    filterOpenButton.addEventListener("click", function () {
+      if (filter.classList.contains('filter--active')) {
+        filter.classList.remove('filter--active');
+      } else {
+        filter.classList.add('filter--active');
+      }
+    })
+   filterCloseButton.addEventListener("click",function(){
+     filter.classList.remove("filter--active");
+   })
 
   </script>
   
