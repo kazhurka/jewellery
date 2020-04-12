@@ -1,11 +1,13 @@
 .subscribe {
-  border-bottom: 1px solid #ffffff;
+  width: 43%;
+
 }
 
 .subscribe__header {
 
   list-style: none;
   margin: 0;
+  margin-bottom: 10px;
   font-family: "Cormorant Garamond", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -15,6 +17,7 @@
 }
 
 .subscribe__text {
+  margin: 0;
   margin-bottom: 40px;
   font-size: 16px;
   line-height: 21px;
@@ -24,11 +27,13 @@
 .subscribe input {
   box-shadow: none;
   outline: none;
+  list-style: none;
   margin: 0;
   padding: 0;
   border: 1px solid transparent;
   background-color: transparent;
   color: #ffffff;
+  font-family: "Poppins","Arial",sans-serif
 }
 
 
@@ -68,11 +73,45 @@
 
 .subscribe__sign-up {
   display: flex;
+  border-bottom: 1px solid #ffffff;
+}
+
+.subscribe__sign-up input::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: #9B9997;
 }
 
 @media (max-width: $desktop-width) {
   .subscribe {
     margin-bottom: 40px;
     width: 100%;
+  }
+
+  .subscribe__link {
+    padding-right: 60px;
+  }
+
+  .subscribe__link::after {
+    top: 8px;
+    left: 72px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .subscribe {
+    margin-bottom: 47px;
+  }
+  .subscribe__header {
+    width: 195px;
+    margin-bottom: 13px;
+  }
+
+  .subscribe__text {
+    width: 235px;
+  }
+
+  .subscribe__link {
+    padding-right: 42px;
   }
 }

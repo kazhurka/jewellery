@@ -4,6 +4,11 @@
   margin-right: 50px;
 }
 
+.filter__form {
+  height: 100%;
+  margin: 0;
+}
+
 .filter__open-button {
   display: none;
 
@@ -13,8 +18,8 @@
   border: 1px solid #A87B62;
   box-sizing: border-box;
   padding-left: 25px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 23px;
   padding-right: 25px;
   position: relative;
   width: 250px;
@@ -30,7 +35,7 @@
 
 
 .filter__group--active .filter__header {
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 
 .filter__header {
@@ -44,12 +49,25 @@
 }
 
 .filter__list {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
+}
+
+.filter__group--active .filter__list {
+  display: block;
+}
+
+.filter__range {
+  display: none;
+}
+
+.filter__group--active .filter__range {
+  display: block;
 }
 
 .filter label {
@@ -72,8 +90,8 @@
 }
 
 .filter__list li {
-  margin-bottom: 10px;
-  padding-left: 25px;
+  margin-bottom: 13px;
+  padding-left: 35px;
 }
 
 .filter__list li:last-child {
@@ -109,7 +127,7 @@
 }
 
 .filter__submit {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   width: 250px;
   height: 68px;
   background: #A87B62;
@@ -128,7 +146,7 @@
   font-family: "Poppins", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 25px;
   color: #1d1613;
   border-bottom: 1px solid #a87b62;
 }
@@ -163,13 +181,13 @@
   .filter__close-button {
     display: none;
     position: absolute;
-    top:-16px;
+    top: -16px;
     right: -16px;
     width: 32px;
     height: 32px;
     // background: #1D1613;
     // border-radius: 50%;
-    background-position: 0 0 ;
+    background-position: 0 0;
     background-repeat: no-repeat;
     background-image: url("../../img/cross-in-circle.svg");
   }
@@ -251,6 +269,7 @@
   .filter {
     width: 280px;
     box-shadow: 0px 5px 32px rgba(219, 213, 208, 0.24);
+    margin-bottom: 40px;
   }
 
   .filter__group {

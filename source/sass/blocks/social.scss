@@ -1,12 +1,12 @@
 .social {
-
+  padding-top: 7px;
   display: flex;
   flex-direction: column;
 }
 
 .social__link {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   padding-left: 30px;
   text-decoration: none;
   list-style: none;
@@ -65,8 +65,10 @@
 
 @media (max-width: $tablet-width) {
   .social {
+    padding-top: 0;
     width: 100%;
     flex-direction: row;
+    min-height: 30px;
   }
 
   .social__text {
@@ -75,9 +77,9 @@
 
   .social__link {
     padding-left: 0;
-    min-width: 30px;
+    min-width: 22px;
     margin-bottom: 0;
-    margin-right: 25px;
+    margin-right: 20px;
   }
 
   .social__link:last-child {
@@ -90,16 +92,29 @@
     background-image: url("../../img/facebook-icon__mobile.svg");
   }
 
+  .social__link--pininterest {
+    margin-right: 27px;
+  }
+
   .social__link--pininterest::before {
     width: 20px;
     height: 21px;
     background-image: url("../../img/pininterest-icon__mobile.svg");
   }
 
+  .social__link--twitter {
+    height: 20px;
+  }
+
   .social__link--twitter::before {
+    top: 5px;
     width: 20px;
-    height: 18px;
+    height: 20px;
     background-image: url("../../img/twitter__mobile.svg");
+  }
+
+  .social__link--instagram {
+    margin-right: 30px;
   }
 
   .social__link--instagram::before {

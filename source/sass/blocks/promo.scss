@@ -13,6 +13,7 @@
 .promo--catalog {
   background-image: url("../../img/catalog-bg__desktop.png");
   height: 261px;
+  margin-bottom: 79px;
 }
 
 .promo--catalog .promo__wrap-bg {
@@ -57,13 +58,14 @@
 @media (max-width: $desktop-width) {
   .promo {
     min-width: 768px;
+    margin-bottom: 65px;
     background-image: url("../../img/main-bg__tablet.png");
   }
 
 
   .promo--catalog {
     margin-bottom: 50px;
-   background-image: url("../../img/catalog-bg__tablet.png");
+    background-image: url("../../img/catalog-bg__tablet.png");
   }
 
 
@@ -73,14 +75,15 @@
   .promo {
     min-width: 320px;
     background-image: url("../../img/main-bg__mobile.png");
+    margin-bottom: 54px;
   }
 
   .promo--catalog {
     background-image: url("../../img/catalog-bg__mobile.png");
+    margin-bottom: 40px;
   }
 
   .promo__text--catalog {
     width: 247px;
   }
 }
-

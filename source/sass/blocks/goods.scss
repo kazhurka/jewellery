@@ -7,19 +7,20 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  margin-bottom: 35px;
   list-style: none;
 }
 
 .goods__item {
-  width: 31%;
-  margin-right: 10px;
+  width: 31.3%;
+  margin-right: 3%;
   margin-bottom: 35px;
 }
 
 .goods__item img {
   width: 100%;
   height: 272px;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 
 .goods__item:nth-of-type(3n) {
@@ -28,7 +29,7 @@
 
 .goods__name {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -46,7 +47,7 @@
 }
 
 .goods__navigation {
-  width: 95.5%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -57,12 +58,12 @@
   padding: 0;
   list-style: none;
   margin: 0 auto;
-  min-width: 96px;
-  justify-content: space-between;
+  min-width: 128px;
 }
 
 
 .goods__page {
+  margin-right: 13px;
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -85,13 +86,29 @@
   line-height: 21px;
 }
 
+.goods__break {
+  display: none;
+}
+
 @media (max-width: $desktop-width) {
 
   .goods__item {
     width: 206px;
+    margin-bottom: 34px;
+  }
+
+  .goods__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 40px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: auto;
   }
 
   .goods img {
+    margin-bottom: 4px;
     height: 208px;
   }
 
@@ -102,19 +119,54 @@
   .goods__navigation {
     width: 678px;
   }
+
+  .goods__break {
+    display: inline;
+  }
+
+  .goods__break--not-tablet {
+    display: none;
+  }
 }
 
 
 @media(max-width: $tablet-width) {
+
+  .goods {
+    margin-bottom: 66px;
+  }
+
+  .goods__list {
+    margin-bottom: 15px;
+  }
+
   .goods__item {
     width: 130px;
+    margin-bottom: 25px;
   }
 
   .goods__navigation {
     width: 290px;
   }
+
+  .goods__pages {
+    width: 138px;
+  }
+
+  .goods__page {
+    margin-right: 23px;
+  }
+
   .goods img {
     height: 136px;
+  }
+
+  .goods__break--not-mobile {
+    display: none;
+  }
+
+  .goods__break--not-tablet {
+    display: inline;
   }
 
   .goods__item:nth-of-type(2n) {
@@ -122,11 +174,15 @@
   }
 
   .goods__name {
+    width: 138px;
     margin-bottom: 10px;
   }
 
   .goods img {
-    margin-bottom: 20px;
+    margin-bottom: 9px;
+  }
+
+  .goods__nav-link {
+    display: none;
   }
 }
-

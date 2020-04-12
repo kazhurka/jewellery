@@ -6,17 +6,17 @@
   padding-right: 10px;
   min-width: 1024px;
   max-width: 1366px;
-  margin-bottom: 120px;
+  margin-bottom: 127px;
 }
 
 .social-photos img {
-  max-width: 100%;
+  max-width: 110%;
   height: auto;
 }
 
 .social-photos__header {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
   list-style-type: none;
   font-family: 'Cormorant Garamond', "Arial", sans-serif;
   font-style: normal;
@@ -39,7 +39,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 25px;
   color: #1D1613;
 
   border-bottom: 1px solid #A87B62;
@@ -47,6 +47,7 @@
 
 .social-photos__items {
   max-width: 1170px;
+  overflow: hidden;
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -82,19 +83,25 @@
     padding-right: 5.8%;
     min-width: 768px;
     width: 768px;
+    margin-bottom: 75px;
   }
 
 
   .social-photos__items {
     min-width: 678px;
     align-items: flex-end;
-    height: 240px;
+    height: 246px;
+  }
+
+  .social-photos__wrap--small {
+    min-height: 245px;
   }
 }
 
 @media (max-width: $tablet-width) {
   .social-photos {
     margin: 0 auto;
+    margin-bottom: 35px;
     padding-left: 15px;
     padding-right: 15px;
     min-width: 320px;
@@ -102,7 +109,9 @@
     flex-wrap: wrap;
 
   }
-
+  .social-photos__link {
+    margin-bottom: 46px;
+  }
   .social-photos__items {
     min-width: 290px;
     height: auto;
@@ -117,7 +126,7 @@
   .social-photos__wrap--small {
     box-sizing: border-box;
     justify-content: space-between;
-    height: auto;
+    height: 232px;
     width: 50%;
     margin-bottom: 15px;
   }
@@ -153,7 +162,7 @@
     box-sizing: border-box;
     width: 50%;
     margin-bottom: 35px;
-  align-items: flex-start;
+    align-items: flex-start;
   }
 
   .social-photos__items {

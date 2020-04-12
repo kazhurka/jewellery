@@ -1,10 +1,11 @@
 .company-info {
+  padding-top: 7px;
   display: flex;
   flex-direction: column;
 }
 
 .company-info__link {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   text-decoration: none;
   list-style: none;
   color: #ffffff;
@@ -24,7 +25,8 @@
 
 @media (max-width: $tablet-width) {
   .company-info {
+    padding-top: 0;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 }

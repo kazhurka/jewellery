@@ -48,7 +48,7 @@
     </div>
 
     <nav class="main-header__nav ">
-      <ul class="main-header__nav-list main-header__nav-list--index>">
+      <ul class="main-header__nav-list">
         <li class="main-header__nav-item"><a href="#">What’s new</a></li>
         <li class="main-header__nav-item"><a href="#">Chokers</a></li>
         <li class="main-header__nav-item"><a href="#">Necklaces </a></li>
@@ -74,10 +74,8 @@
     <div class="catalog-container">
 
       <div class="filter ">
-        <button class="button filter__open-button">Filter</button>
-        <button class="button filter__close-button"></button>
+        <h2 class="visually-hidden">Filters</h2>
         <form class="filter__form">
-          <h2 class="visually-hidden">Filters</h2>
           <div class="filter__group filter__group--active">
             <button type="button" class="button filter__button filter__button--up"></button>
             <button type="button" class="button filter__button filter__button--down"></button>
@@ -97,6 +95,7 @@
                 <label for="filter-earrings">Earrings</label>
               </li>
             </ul>
+
           </div>
           <div class="filter__group">
             <button type="button" class="button filter__button filter__button--up"></button>
@@ -112,7 +111,7 @@
             <button type="button" class="button filter__button filter__button--up"></button>
             <button type="button" class="button filter__button filter__button--down"></button>
             <h3 class="filter__header">Price</h3>
-            <div class="range">
+            <div class="range filter__range">
               <div class="range__wrap">
                 <div class="range__scale">
                   <div class="range__bar"></div>
@@ -134,11 +133,13 @@
           <button type="submit" class=" button filter__submit">Apply</button>
           <button type="reset" class="button filter__reset">Clear All</button>
         </form>
+        <button class="button filter__open-button">Filter</button>
+        <button class="button filter__close-button"></button>
       </div>
       <div class="goods">
         <ul class="goods__list">
           <li class="goods__item">
-            <a>
+            <a href="#">
               <picture>
                 <source media="(max-width: 768px)"
                   srcset="img/double-pearl-earrings__mobile.png 1x, img/double-pearl-earrings__mobile@2x.png 2x">
@@ -152,7 +153,7 @@
             <p class="goods__price">$ 115</p>
           </li>
           <li class="goods__item">
-            <a>
+            <a href="#">
               <picture>
                 <source media="(max-width: 768px)"
                   srcset="img/black-choker-gold-bead__mobile.png 1x, img/black-choker-gold-bead__mobile@2x.png 2x">
@@ -162,11 +163,11 @@
                   srcset="img/black-choker-gold-bead__desktop@2x.png 2x" alt="Choker with gold bead">
               </picture>
             </a>
-            <h3 class="goods__name">Choker with gold bead</h3>
+            <h3 class="goods__name">Choker with <br class="goods__break goods__break--not-tablet">gold<br class="goods__break goods__break--not-mobile"> bead</h3>
             <p class="goods__price">$ 55</p>
           </li>
           <li class="goods__item">
-            <a>
+            <a href="#">
               <picture>
                 <source media="(max-width: 768px)"
                   srcset="img/gold-layered-necklace__mobile.png 1x, img/gold-layered-necklace__mobile@2x.png 2x">
@@ -180,7 +181,7 @@
             <p class="goods__price">$155</p>
           </li>
           <li class="goods__item">
-            <a>
+            <a href="#">
               <picture>
                 <source media="(max-width: 768px)"
                   srcset="img/blue-gemstone-pendant__mobile.png 1x, img/blue-gemstone-pendant__mobile@2x.png 2x">
@@ -190,11 +191,11 @@
                   srcset="img/blue-gemstone-pendant__desktop@2x.png 2x" alt="Blue gemstone pendant">
               </picture>
             </a>
-            <h3 class="goods__name">Blue gemstone pendant</h3>
+            <h3 class="goods__name">Blue gemstone <br class="goods__break">pendant</h3>
             <p class="goods__price">$105</p>
           </li>
           <li class="goods__item">
-            <a>
+            <a href="#">
               <picture>
                 <source media="(max-width: 768px)"
                   srcset="img/boho-earrings__mobile.png 1x, img/boho-earrings__mobile@2x.png 2x">
@@ -204,11 +205,11 @@
                   srcset="img/boho-earrings__desktop@2x.png 2x" alt=" Boho earrings">
               </picture>
             </a>
-            <h3 class="goods__name"> Boho earrings</h3>
-            <p class="goods__price">$75</p>
+            <h3 class="goods__name"> Boho <br class="goods__break goods__break--not-mobile">earrings</h3>
+            <p class="goods__price">$ 75</p>
           </li>
           <li class="goods__item">
-            <a>
+            <a href="#">
               <picture>
                 <source media="(max-width: 768px)"
                   srcset="img/bird-necklace__mobile.png 1x, img/bird-necklace__mobile@2x.png 2x">
@@ -218,11 +219,11 @@
                   srcset="img/bird-necklace__desktop@2x.png 2x" alt="Gold bird necklace">
               </picture>
             </a>
-            <h3 class="goods__name">Gold bird necklace</h3>
-            <p class="goods__price">$75</p>
+            <h3 class="goods__name">Gold bird <br class="goods__break"> necklace</h3>
+            <p class="goods__price">$ 75</p>
           </li>
           <li class="goods__item">
-            <a>
+            <a href="#">
               <picture>
                 <source media="(max-width: 768px)"
                   srcset="img/black-leather-choker-necklace__mobile.png 1x, img/black-leather-choker-necklace__mobile@2x.png 2x">
@@ -232,11 +233,11 @@
                   srcset="img/black-leather-choker-necklace__desktop@2x.png 2x" alt="Black leather choker">
               </picture>
             </a>
-            <h3 class="goods__name">Black leather choker</h3>
-            <p class="goods__price">$85</p>
+            <h3 class="goods__name">Black leather <br class="goods__break"> choker</h3>
+            <p class="goods__price">$ 85</p>
           </li>
           <li class="goods__item">
-            <a>
+            <a href="#">
               <picture>
                 <source media="(max-width: 768px)"
                   srcset="img/purple-gemstone-necklace__mobile.png 1x, img/purple-gemstone-necklace__mobile@2x.png 2x">
@@ -247,10 +248,10 @@
               </picture>
             </a>
             <h3 class="goods__name"> Necklace with amethyst</h3>
-            <p class="goods__price">$145</p>
+            <p class="goods__price">$ 145</p>
           </li>
           <li class="goods__item">
-            <a>
+            <a href="#">
               <picture>
                 <source media="(max-width: 768px)"
                   srcset="img/elephant-earrings__mobile.png 1x, img/elephant-earrings__mobile@2x.png 2x">
@@ -260,11 +261,11 @@
                   srcset="img/elephant-earrings__desktop@2x.png 2x" alt="Elephant earrings">
               </picture>
             </a>
-            <h3 class="goods__name">Elephant earrings</h3>
-            <p class="goods__price">$145</p>
+            <h3 class="goods__name">Elephant<br class="goods__break"> earrings</h3>
+            <p class="goods__price">$ 145</p>
           </li>
           <li class="goods__item">
-            <a>
+            <a href="#">
               <picture>
                 <source media="(max-width: 768px)"
                   srcset="img/threader-necklace-closeup__mobile.png 1x, img/threader-necklace-closeup__mobile@2x.png 2x">
@@ -275,10 +276,10 @@
               </picture>
             </a>
             <h3 class="goods__name"> Threader necklace</h3>
-            <p class="goods__price">$115</p>
+            <p class="goods__price">$ 115</p>
           </li>
           <li class="goods__item">
-            <a>
+            <a href="#">
               <picture>
                 <source media="(max-width: 768px)"
                   srcset="img/origami-crane-necklace__mobile.png 1x, img/origami-crane-necklace__mobile@2x.png 2x">
@@ -289,10 +290,10 @@
               </picture>
             </a>
             <h3 class="goods__name"> Origami crane necklace</h3>
-            <p class="goods__price">$105</p>
+            <p class="goods__price">$ 105</p>
           </li>
           <li class="goods__item">
-            <a>
+            <a href="#">
               <picture>
                 <source media="(max-width: 768px)"
                   srcset="img/marble-earrings__mobile.png 1x, img/marble-earrings__mobile@2x.png 2x">
@@ -302,8 +303,8 @@
                   srcset="img/marble-earrings__desktop@2x.png 2x" alt="Origami crane necklace">
               </picture>
             </a>
-            <h3 class="goods__name"> Marble earrings</h3>
-            <p class="goods__price">$95</p>
+            <h3 class="goods__name"> Marble<br class="goods__break goods__break--not-mobile"> earrings</h3>
+            <p class="goods__price">$ 95</p>
           </li>
         </ul>
         <div class="goods__navigation">
@@ -329,7 +330,7 @@
         <h2 class="subscribe__header">The good stuff in your inbox</h2>
         <p class="subscribe__text">News and updates from CH. No spam, we promise</p>
         <div class="subscribe__sign-up">
-          <input type="email" id="subscribe-email" placeholder="Your e-mail">
+          <input type="email" id="subscribe-email" placeholder="Your E-mail">
           <a href="#" class="subscribe__link">Sign Up</a>
         </div>
 
@@ -385,9 +386,35 @@
         filter.classList.add('filter--active');
       }
     })
-   filterCloseButton.addEventListener("click",function(){
-     filter.classList.remove("filter--active");
-   })
+    filterCloseButton.addEventListener("click", function () {
+      filter.classList.remove("filter--active");
+    })
+
+    var filterGroup = document.querySelectorAll('.filter__group');
+    var filterUp = document.querySelector('.filter__button--up');
+    var filterDown = document.querySelector('.filter__button--down');
+
+
+    var openHandler = function (item) {
+      item.addEventListener('click', function (evt) {
+        if (evt.target.classList.contains('filter__button--up')) {
+          console.log(item)
+          item.classList.remove('filter__group--active')
+        }
+      })
+    }
+
+    var closeHandler = function (item) {
+      item.addEventListener('click', function (evt) {
+        if (evt.target.classList.contains('filter__button--down')) {
+          item.classList.add('filter__group--active')
+        }
+      })
+    }
+
+    filterGroup.forEach(openHandler);
+    filterGroup.forEach(closeHandler);
+
 
   </script>
   </script>
