@@ -1,14 +1,15 @@
 .order-info {
-  padding-top: 5px;
   display: flex;
   flex-direction: column;
+  padding-top: 5px;
 }
 
 .order-info__link {
-  text-decoration: none;
+  margin-bottom: 22px;
+
   list-style: none;
   color: #ffffff;
-  margin-bottom: 22px;
+  text-decoration: none;
 }
 
 .order-info__link:hover {
@@ -24,11 +25,9 @@
 }
 
 
-
 @media (max-width: $tablet-width) {
-
   .order-info {
-    padding-top: 0;
     margin-bottom: 38px;
+    padding-top: 0;
   }
 }

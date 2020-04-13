@@ -1,14 +1,15 @@
 .company-info {
-  padding-top: 7px;
   display: flex;
   flex-direction: column;
+  padding-top: 7px;
 }
 
 .company-info__link {
   margin-bottom: 22px;
-  text-decoration: none;
+
   list-style: none;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .company-info__link:hover {
@@ -25,8 +26,8 @@
 
 @media (max-width: $tablet-width) {
   .company-info {
-    padding-top: 0;
     width: 100%;
     margin-bottom: 42px;
+    padding-top: 0;
   }
 }

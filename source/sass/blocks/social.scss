@@ -1,16 +1,18 @@
 .social {
-  padding-top: 7px;
   display: flex;
   flex-direction: column;
+  padding-top: 7px;
 }
 
 .social__link {
   position: relative;
+
   margin-bottom: 22px;
   padding-left: 30px;
-  text-decoration: none;
+
   list-style: none;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .social__link:hover {
@@ -27,16 +29,18 @@
 
 .social__link::before {
   content: "";
+  position: absolute;
   top: 3px;
   left: 0;
-  position: absolute;
-  background-position: 0 0;
+
   background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .social__link--instagram::before {
   width: 15px;
   height: 15px;
+
   background-image: url("../../img/instagram-icon.svg");
 }
 
@@ -47,28 +51,31 @@
 .social__link--facebook::before {
   width: 8px;
   height: 15px;
+
   background-image: url("../../img/facebook-icon.svg");
 }
 
 .social__link--pininterest::before {
   width: 15px;
   height: 15px;
+
   background-image: url("../../img/pininterest-icon.svg");
 }
 
 .social__link--twitter::before {
   width: 15px;
   height: 13px;
+
   background-image: url("../../img/twitter-icon.svg");
 }
 
 
 @media (max-width: $tablet-width) {
   .social {
-    padding-top: 0;
-    width: 100%;
     flex-direction: row;
+    width: 100%;
     min-height: 30px;
+    padding-top: 0;
   }
 
   .social__text {
@@ -76,10 +83,10 @@
   }
 
   .social__link {
-    padding-left: 0;
     min-width: 22px;
-    margin-bottom: 0;
     margin-right: 20px;
+    margin-bottom: 0;
+    padding-left: 0;
   }
 
   .social__link:last-child {
@@ -89,6 +96,7 @@
   .social__link--facebook::before {
     width: 12px;
     height: 21px;
+
     background-image: url("../../img/facebook-icon__mobile.svg");
   }
 
@@ -99,6 +107,7 @@
   .social__link--pininterest::before {
     width: 20px;
     height: 21px;
+
     background-image: url("../../img/pininterest-icon__mobile.svg");
   }
 
@@ -108,8 +117,10 @@
 
   .social__link--twitter::before {
     top: 5px;
+
     width: 20px;
     height: 20px;
+
     background-image: url("../../img/twitter__mobile.svg");
   }
 
@@ -120,6 +131,7 @@
   .social__link--instagram::before {
     width: 20px;
     height: 21px;
+
     background-image: url("../../img/instagram-icon__mobile.svg");
   }
 }

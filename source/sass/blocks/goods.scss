@@ -6,8 +6,9 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
   margin-bottom: 35px;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -30,6 +31,7 @@
 .goods__name {
   margin: 0;
   margin-bottom: 8px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -39,6 +41,7 @@
 
 .goods__price {
   margin: 0;
+
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -47,43 +50,44 @@
 }
 
 .goods__navigation {
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .goods__pages {
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  margin: 0 auto;
   min-width: 128px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
 }
 
 
 .goods__page {
   margin-right: 13px;
-  text-decoration: none;
+
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  color: #9B9997;
+  color: #9b9997;
+  text-decoration: none;
 }
 
 .goods__page--active {
-  color: #1D1613
+  color: #1d1613;
 }
 
 .goods__nav-link {
   list-style: none;
-  text-decoration: none;
-  color: #1D1613;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
+  color: #1d1613;
+  text-decoration: none;
 }
 
 .goods__break {
@@ -91,7 +95,6 @@
 }
 
 @media (max-width: $desktop-width) {
-
   .goods__item {
     width: 206px;
     margin-bottom: 34px;
@@ -101,15 +104,15 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    min-height: 40px;
     width: 200px;
+    min-height: 40px;
     margin: 0 auto;
     margin-top: auto;
   }
 
   .goods img {
-    margin-bottom: 4px;
     height: 208px;
+    margin-bottom: 4px;
   }
 
   .goods__list {
@@ -130,8 +133,7 @@
 }
 
 
-@media(max-width: $tablet-width) {
-
+@media (max-width: $tablet-width) {
   .goods {
     margin-bottom: 66px;
   }
@@ -159,6 +161,7 @@
 
   .goods img {
     height: 136px;
+    margin-bottom: 9px;
   }
 
   .goods__break--not-mobile {
@@ -178,9 +181,6 @@
     margin-bottom: 10px;
   }
 
-  .goods img {
-    margin-bottom: 9px;
-  }
 
   .goods__nav-link {
     display: none;

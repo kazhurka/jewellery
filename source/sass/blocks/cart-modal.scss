@@ -1,20 +1,20 @@
 .cart-modal {
-  margin: 0 auto;
-  display: none;
-  z-index: 2;
   position: absolute;
   top: 372px;
   left: 50%;
-  transform: translate(-50%, 0);
+  z-index: 2;
 
+  display: none;
   box-sizing: border-box;
+  width: 500px;
+  height: 439px;
+  margin: 0 auto;
   padding-top: 45px;
   padding-bottom: 45px;
 
-  width: 500px;
-  height: 439px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 32px rgba(121, 121, 121, 0.24);
+  background: #ffffff;
+  box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24);
+  transform: translate(-50%, 0);
 }
 
 
@@ -23,28 +23,32 @@
 }
 
 .cart-modal__close {
-  right: 20px;
+  position: absolute;
   top: 20px;
+  right: 20px;
+
   width: 14px;
   height: 14px;
-  background-position: 0 0;
-  background-repeat: no-repeat;
+
   background-image: url("../../img/cross-icon.svg");
-  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .cart-modal__header {
   margin: 0;
   margin-bottom: 15px;
-  font-family: "Cormorant Garamond", "Arial", sans-serif;
+
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
+  font-family: "Cormorant Garamond", "Arial", sans-serif;
 }
 
 .cart-modal__price {
   margin: 0;
+
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -54,12 +58,13 @@
 .cart-modal__text {
   margin: 0;
   margin-bottom: 45px;
-  text-align: center;
-  font-family: "Cormorant Garamond", "Arial", sans-serif;
+
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 34px;
+  font-family: "Cormorant Garamond", "Arial", sans-serif;
+  text-align: center;
 }
 
 .cart-modal__quantity {
@@ -73,6 +78,7 @@
 
 .cart-modal__quantity-text {
   margin: 0;
+
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -80,33 +86,38 @@
 }
 
 .cart-modal__button {
+  position: absolute;
   right: 35px;
 
   width: 14px;
-  position: absolute;
-  background-position: 0 0;
+
   background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .cart-modal__button-more {
   top: 123px;
+
   height: 14px;
+
   background-image: url("../../img/plus-icon.svg");
 }
 
 .cart-modal__button-less {
   top: 189px;
+
   height: 2px;
+
   background-image: url("../../img/minus-icon.svg");
 }
 
 .cart-modal__item {
-  padding-left: 35px;
-  padding-right: 35px;
   display: flex;
   align-items: center;
   min-height: 79px;
   margin-bottom: 40px;
+  padding-right: 35px;
+  padding-left: 35px;
 }
 
 .cart-modal__img {
@@ -116,18 +127,20 @@
 }
 
 .cart-modal__total {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
-  padding-left: 35px;
-  padding-right: 35px;
   padding-top: 15px;
+  padding-right: 35px;
   padding-bottom: 15px;
+  padding-left: 35px;
+
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  border-top: 1px solid #F6F5F4;
-  display: flex;
-  justify-content: space-between;
+
+  border-top: 1px solid #f6f5f4;
 }
 
 .cart-modal__total-item {
@@ -135,43 +148,47 @@
 }
 
 .cart-modal__total-price {
-  font-weight: 500;
   margin: 0;
+
+  font-weight: 500;
 }
 
 .cart-modal__links {
-  padding-left: 35px;
-  padding-right: 35px;
   display: flex;
   justify-content: space-between;
+  padding-right: 35px;
+  padding-left: 35px;
 }
 
 .cart-modal__link {
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-decoration: none;
+  align-items: center;
+  box-sizing: border-box;
   width: 200px;
   height: 68px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  color: #1D1613;
-  border: 1px solid #A87B62;
-  box-sizing: border-box;
+  color: #1d1613;
+  text-decoration: none;
+
+  border: 1px solid #a87b62;
 }
 
 .cart-modal__link--checkout {
-  background-color: #A87B62;
-  color: #FFFFFF;
+  color: #ffffff;
+
+  background-color: #a87b62;
 }
 
 
 @media (max-width: $desktop-width) {
   .cart-modal {
     top: 258px;
-    width: 502px;
 
+    width: 502px;
   }
 
   .cart-modal__button-close {
@@ -180,8 +197,8 @@
   }
 
   .cart-modal__total {
-    padding-left: 30px;
     padding-right: 30px;
+    padding-left: 30px;
   }
 
   .cart-modal__button {
@@ -194,17 +211,16 @@
 
   .cart-modal__button-less {
     top: 193px;
-
   }
 
   .cart-modal__item {
-    padding-left: 30px;
     padding-right: 30px;
+    padding-left: 30px;
   }
 
   .cart-modal__links {
-    padding-left: 30px;
     padding-right: 30px;
+    padding-left: 30px;
   }
 
   .cart-modal__link {
@@ -218,9 +234,10 @@
 
 @media (max-width: $tablet-width) {
   .cart-modal {
+    top: 117px;
+
     width: 290px;
     height: 519px;
-    top: 117px;
   }
 
   .cart-modal__img {
@@ -229,22 +246,23 @@
   }
 
   .cart-modal__text {
-    margin: 0 auto;
-    margin-bottom: 30px;
     display: block;
     width: 187px;
-    font-family: "Cormorant Garamond";
+    margin: 0 auto;
+    margin-bottom: 30px;
+
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
+    font-family: "Cormorant Garamond", "Arial", sans-serif;
   }
 
   .cart-modal__item {
-    padding-left: 15px;
-    padding-right: 15px;
     min-height: 63px;
     margin-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .cart-modal__header {
@@ -266,9 +284,9 @@
   }
 
   .cart-modal__total {
-    padding-left: 15px;
-    padding-right: 15px;
     flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .cart-modal__total-item {
@@ -276,9 +294,9 @@
   }
 
   .cart-modal__links {
-    padding-left: 15px;
-    padding-right: 15px;
     flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .cart-modal__link {
@@ -298,5 +316,4 @@
   .cart-modal__button {
     right: 15px;
   }
-
 }

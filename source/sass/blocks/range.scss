@@ -14,16 +14,15 @@
 }
 
 .range__price-wrap {
-  margin: 0 auto;
   display: flex;
-  width: 210px;
-  margin-top: 12px;
   justify-content: space-between;
+  width: 210px;
+  margin: 0 auto;
+  margin-top: 12px;
 }
 
 .range__price input {
   display: inline-block;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   margin: 0;
@@ -47,15 +46,17 @@
   width: 200px;
   height: 1px;
 
-  background: #F0EAE4;
+  background: #f0eae4;
 }
 
 .range__bar {
   position: absolute;
+  left: 60px;
+
   width: 90px;
   height: 1px;
-  left: 60px;
-  background-color: #A87B62;
+
+  background-color: #a87b62;
 }
 
 
@@ -104,10 +105,10 @@
 
   .range__price-wrap {
     justify-content: flex-start;
+    width: 100%;
     margin: 0;
     margin-top: 10px;
     padding-left: 10px;
-    width: 100%;
   }
 
   .range__price {

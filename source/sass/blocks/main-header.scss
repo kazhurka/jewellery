@@ -1,19 +1,16 @@
 .main-header {
-  padding-top: 30px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  min-width: 1024px;
-  max-width: 1366px;
-  width: 100%;
-
-  padding-left: 7%;
-  padding-right: 7%;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
   align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-right: 7%;
+  padding-left: 7%;
 }
 
 .main-header__menu-button {
@@ -25,24 +22,25 @@
 }
 
 .main-header__user {
-  width: 33%;
-  box-sizing: border-box;
   display: flex;
-  min-width: 122px;
   justify-content: flex-end;
+  box-sizing: border-box;
+  width: 33%;
+  min-width: 122px;
 }
 
 .main-header__user-link {
   display: flex;
   align-items: center;
-  text-decoration: none;
-  color: #1d1613;
-  font-family: "Poppins", "Arial", sans-serif;
+  margin-right: 35px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  margin-right: 35px;
+  font-family: "Poppins", "Arial", sans-serif;
+  color: #1d1613;
+  text-decoration: none;
 }
 
 .main-header__user-link:last-child {
@@ -58,47 +56,48 @@
 }
 
 .main-header__search {
-  width: 33%;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   position: relative;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  width: 33%;
   min-width: 169px;
   padding-left: 30px;
 }
 
 .main-header__search-svg {
+  position: absolute;
   top: 3px;
   left: 1px;
 
   width: 14px;
   height: 14px;
-
-  position: absolute;
 }
 
 .main-header__search input {
-  outline: none;
   box-sizing: border-box;
   width: 140px;
   height: 15px;
+
   border: 1px solid white;
+  outline: none;
 }
 
 .main-header__search input::placeholder {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  color: #1d1613;
   font-family: "Poppins", "Arial", sans-serif;
+  color: #1d1613;
 }
 
 .main-header__logo-link {
-  width: 34%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 34%;
 }
 
 .main-header__search input:hover,
@@ -113,16 +112,17 @@
 
 
 .main-header__nav {
-  margin: 0 auto;
-  margin-top: 30px;
   box-sizing: border-box;
-  border-top: 1px solid #f6f5f4;
-  padding-top: 19px;
-  padding-bottom: 21px;
-  min-height: 50px;
   width: 100%;
   max-width: 1170px;
+  min-height: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
   margin-bottom: 0;
+  padding-top: 19px;
+  padding-bottom: 21px;
+
+  border-top: 1px solid #f6f5f4;
 }
 
 .main-header__nav-item:hover {
@@ -134,16 +134,16 @@
 }
 
 .main-header__nav-list {
-  box-sizing: border-box;
   display: none;
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  width: 493px;
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
+  box-sizing: border-box;
+  width: 493px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
 }
 
 .main-header--no-nav .main-header__nav {
@@ -156,9 +156,9 @@
 
 
 .main-header a {
-  text-decoration: none;
   list-style: none;
   color: #1d1613;
+  text-decoration: none;
 }
 
 .main-header__for-customers {
@@ -172,7 +172,6 @@
 
 
 @media (max-width: $desktop-width) {
-
   .main-header--open .main-header__user,
   .main-header--open .main-header__search,
   .main-header--open .main-header__for-customers {
@@ -188,9 +187,11 @@
   }
 
   .main-header--open {
-    background-color: #a87b62;
-    color: #ffffff;
     padding-bottom: 80px;
+
+    color: #ffffff;
+
+    background-color: #a87b62;
   }
 
 
@@ -200,11 +201,11 @@
 
   .main-header {
     position: relative;
-    min-width: 768px;
-    padding-left: 5.8%;
-    padding-right: 5.8%;
 
     align-items: stretch;
+    min-width: 768px;
+    padding-right: 5.8%;
+    padding-left: 5.8%;
   }
 
   .main-header a {
@@ -212,17 +213,19 @@
   }
 
   .main-header__nav {
-    border: none;
-    margin-top: 0;
     box-sizing: border-box;
     width: 100%;
+    margin-top: 0;
+
+    border: none;
   }
 
   .main-header__nav-list {
-    margin: 0;
-    box-sizing: border-box;
     flex-direction: column;
     align-items: flex-start;
+    box-sizing: border-box;
+    margin: 0;
+
     font-size: 24px;
     line-height: 36px;
   }
@@ -233,11 +236,12 @@
 
 
   .main-header__for-customers {
-    box-sizing: border-box;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+
     font-size: 18px;
     line-height: 23px;
     color: rgba(255, 255, 255, 0.75);
@@ -245,6 +249,7 @@
 
   .main-header__for-customers a {
     margin-bottom: 25px;
+
     color: rgba(255, 255, 255, 0.75);
   }
 
@@ -253,21 +258,22 @@
   }
 
   .main-header__logo-link {
-    width: 100%;
     order: -1;
+    width: 100%;
     margin-bottom: 30px;
   }
 
 
   .main-header__search {
-    padding-left: 0;
     width: 100%;
     margin-bottom: 55px;
+    padding-left: 0;
   }
 
   .main-header__search-svg {
-    left: 6%;
     top: 35%;
+    left: 6%;
+
     width: 18px;
     height: 16px;
   }
@@ -283,10 +289,11 @@
   .main-header__search input {
     width: 100%;
     height: 45px;
-    border-radius: 21px;
+    padding-left: 50px;
+
     background-color: rgba(255, 255, 255, 0.15);
     border-color: transparent;
-    padding-left: 50px;
+    border-radius: 21px;
   }
 
   .main-header__search input:hover,
@@ -299,9 +306,10 @@
   }
 
   .main-header__user {
-    order: 1;
     justify-content: flex-start;
+    order: 1;
     width: 100%;
+
     font-size: 18px;
     line-height: 23px;
   }
@@ -316,17 +324,19 @@
   }
 
   .main-header__menu-button {
-    display: block;
     position: absolute;
     top: 55px;
     left: 6%;
+
+    display: block;
   }
 
   .main-header__cart-button {
-    display: block;
     position: absolute;
     top: 55px;
     right: 6%;
+
+    display: block;
   }
 
   .main-header--open path {
@@ -343,13 +353,12 @@
 
 @media (max-width: $tablet-width) {
   .main-header {
-    padding-top: 20px;
     min-width: 320px;
     margin: 0 auto;
-    padding-left: 4.6%;
+    padding-top: 20px;
     padding-right: 4.6%;
+    padding-left: 4.6%;
   }
-
 
 
   .main-header__logo-link {
@@ -366,13 +375,12 @@
   }
 
   .main-header__menu-button {
-    left: 5%;
     top: 38px;
+    left: 5%;
   }
 
   .main-header__cart-button {
-    right: 4%;
     top: 38px;
+    right: 4%;
   }
-
 }
