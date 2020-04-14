@@ -94,6 +94,7 @@
 }
 
 .login__button-enter {
+  outline: none;
   width: 340px;
   height: 68px;
   margin-top: 45px;
@@ -106,6 +107,14 @@
 
   background: #a87b62;
   border: 1px solid #a87b62;
+}
+
+.login__button-enter:hover {
+  opacity: 70%;
+}
+
+.login__button-enter:active {
+  opacity: 50%;
 }
 
 .login__close {
@@ -140,6 +149,7 @@
 
 @media (max-width: $tablet-width) {
   .login {
+    left: 30%;
     width: 270px;
     height: 470px;
     padding-top: 120px;

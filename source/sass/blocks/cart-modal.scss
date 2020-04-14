@@ -177,6 +177,14 @@
   border: 1px solid #a87b62;
 }
 
+.cart-modal__link:hover {
+  opacity: 70%;
+}
+
+.cart-modal__link:active {
+  opacity: 50%;
+}
+
 .cart-modal__link--checkout {
   color: #ffffff;
 

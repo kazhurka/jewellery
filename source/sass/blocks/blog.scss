@@ -46,6 +46,11 @@
   padding-left: 50%;
 
   background-image: url("../../img/blog-photo-1__desktop.png");
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../../img/blog-photo-1__desktop@2x.png");
+  }
 }
 
 .blog__article--bottom {
@@ -53,6 +58,11 @@
 
   background-image: url("../../img/blog-photo-2__desktop.png");
   background-position: 100% 0;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../../img/blog-photo-2__desktop@2x.png");
+  }
 }
 
 .blog__article--big {
@@ -68,6 +78,11 @@
   background-image: url("../../img/blog-photo-3__desktop.png");
   background-position: 0 0;
   background-size: auto;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../../img/blog-photo-3__desktop@2x.png");
+  }
 }
 
 .blog__article--big::after {
@@ -134,7 +149,7 @@
   opacity: 70%;
 }
 
-.blog__link:active {
+.blog__link--article:active {
   opacity: 50%;
 }
 
@@ -197,10 +212,20 @@
 
   .blog__article--top {
     background-image: url("../../img/blog-photo-1__tablet.png");
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../../img/blog-photo-1__tablet@2x.png");
+    }
   }
 
   .blog__article--bottom {
     background-image: url("../../img/blog-photo-2__tablet.png");
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../../img/blog-photo-2__tablet@2x.png");
+    }
   }
 
   .blog__article--big {
@@ -215,6 +240,11 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 50% 100%;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../../img/blog-photo-3__tablet@2x.png");
+    }
   }
 
   .blog__article--big::after {
@@ -255,15 +285,30 @@
 
   .blog__article--top {
     background-image: url("../../img/blog-photo-1__mobile.png");
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../../img/blog-photo-1__mobile@2x.png");
+    }
   }
 
   .blog__article--bottom {
     background-image: url("../../img/blog-photo-2__mobile.png");
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../../img/blog-photo-2__mobile@2x.png");
+    }
   }
 
   .blog__article--big {
     padding-top: 316px;
 
     background-image: url("../../img/blog-photo-3__mobile.png");
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../../img/blog-photo-3__mobile@2x.png");
+    }
   }
 }

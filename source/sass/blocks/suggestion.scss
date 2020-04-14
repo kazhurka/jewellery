@@ -22,6 +22,10 @@
   margin: 0 auto;
   margin-bottom: 51px;
   overflow: hidden;
+
+  @media (max-width: 1360px) {
+    width: 890px;
+  }
 }
 
 .suggestion__header {

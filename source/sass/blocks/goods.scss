@@ -18,6 +18,13 @@
   margin-bottom: 35px;
 }
 
+.goods__item a {
+  list-style: none;
+  color: #1d1613;
+  text-decoration: none;
+}
+
+
 .goods__item img {
   width: 100%;
   height: 272px;
@@ -37,6 +44,14 @@
   font-size: 16px;
   line-height: 21px;
   text-align: center;
+}
+
+.goods__name:hover {
+  opacity: 70%;
+}
+
+.goods__name:active {
+  opacity: 50%;
 }
 
 .goods__price {
@@ -88,6 +103,14 @@
   line-height: 21px;
   color: #1d1613;
   text-decoration: none;
+}
+
+.goods__nav-link:hover {
+  opacity: 70%;
+}
+
+.goods__nav-link:active {
+  opacity: 50%;
 }
 
 .goods__break {

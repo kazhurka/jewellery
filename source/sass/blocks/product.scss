@@ -138,6 +138,14 @@
   border: 1px solid #a87b62;
 }
 
+.product__button:hover {
+  opacity: 70%;
+}
+
+.product__button:active {
+  opacity: 50%;
+}
+
 .product__terms {
   display: flex;
   justify-content: space-between;

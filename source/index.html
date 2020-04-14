@@ -5,18 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Jewellery shop">
   <title>"CH Jewellery" </title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <header class="main-header main-header--no-js main-header--no-nav ">
-    <a href="#" class="main-header__menu-button">
+    <a href="#" class="main-header__menu-button" aria-label="Menu ">
       <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 1H25M0 9H25M0 17H25" stroke="#1D1613" stroke-width="2" />
       </svg>
     </a>
-    <a href="#" class="main-header__cart-button">
+    <a href="#" class="main-header__cart-button" aria-label="Your cart">
       <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M14 5C14 6.06087 13.5786 7.07828 12.8284 7.82843C12.0783 8.57857 11.0609 9 10 9C8.93913 9 7.92172 8.57857 7.17157 7.82843C6.42143 7.07828 6 6.06087 6 5M1 1H19V17H1V1Z"
@@ -31,6 +32,7 @@
           fill="black" />
       </svg>
       <form>
+        <label for="search" class="visually-hidden">Search</label>
         <input type="text" id="search" placeholder="Type here to search">
       </form>
     </div>
@@ -72,13 +74,19 @@
     <section class="suggestion">
       <h2 class="suggestion__header">New In</h2>
       <a href="catalog.html" class="suggestion__link">Shop Now</a>
-      <button type="button" class=" button suggestion__button suggestion__button--left"></button>
-      <button type="button" class="button suggestion__button suggestion__button--right"></button>
+      <button type="button" class=" button suggestion__button suggestion__button--left" aria-label="Arrow left"></button>
+      <button type="button" class="button suggestion__button suggestion__button--right" aria-label="Arrow right"></button>
       <div class="suggestion__slider">
         <ul class="suggestion__goods">
           <li class="suggestion__good">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/purple-gemstone-necklace__mobile.webp 1x,img/purple-gemstone-necklace__mobile@2x.webp 2x ">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/purple-gemstone-necklace-main__tablet.webp 1x,img/purple-gemstone-necklace-main__tablet@2x.webp 2x ">
+                <source type="image/webp" srcset="img/purple-gemstone-necklace__desktop.webp 1x,
+                img/purple-gemstone-necklace__desktop@2x.webp 2x ">
                 <source media="(max-width: 767px)"
                   srcset="img/purple-gemstone-necklace__mobile.png 1x, img/purple-gemstone-necklace__mobile@2x.png 2x">
                 <source media="(max-width: 1023px)"
@@ -95,6 +103,12 @@
           <li class="suggestion__good">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/layered-choker-necklace__mobile.webp 1x,img/layered-choker-necklace__mobile@2x.webp 2x ">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/layered-choker-necklace__tablet.webp 1x,img/layered-choker-necklace__tablet@2x.webp 2x ">
+                <source type="image/webp" srcset="img/layered-choker-necklace__desktop.webp 1x,
+                img/layered-choker-necklace__desktop@2x.webp 2x ">
                 <source media="(max-width: 767px)"
                   srcset="img/layered-choker-necklace__mobile.png  1x, img/layered-choker-necklace__mobile@2x.png 2x">
                 <source media="(max-width: 1023px)"
@@ -111,6 +125,8 @@
           <li class="suggestion__good suggestion__good--hidden">
             <a href="#">
               <picture>
+                <source type="image/webp" srcset="img/dainty-gold-necklace.__desktop.webp 1x,
+                img/dainty-gold-necklace__desktop@2x.webp 2x ">
                 <img class=" suggestion__img" src="img/dainty-gold-necklace.__desktop.png"
                   srcset="img/dainty-gold-necklace__desktop@2x.png 2x" alt="Gold chain">
               </picture>
@@ -123,6 +139,8 @@
           <li class="suggestion__good suggestion__good--hidden">
             <a href="#">
               <picture>
+                <source type="image/webp" srcset="img/galaxy-earrings__desktop.webp 1x,
+                img/galaxy-earrings__desktop@2x.webp 2x ">
                 <img class=" suggestion__img" src="img/galaxy-earrings__desktop.png"
                   srcset="img/galaxy-earrings__desktop@2x.png 2x" alt="Galaxy-earrings">
               </picture>
@@ -135,6 +153,12 @@
           <li class="suggestion__good">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/purple-gemstone-necklace__mobile.webp 1x,img/purple-gemstone-necklace__mobile@2x.webp 2x ">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/purple-gemstone-necklace-main__tablet.webp 1x,img/purple-gemstone-necklace-main__tablet@2x.webp 2x ">
+                <source type="image/webp" srcset="img/purple-gemstone-necklace__desktop.webp 1x,
+                img/purple-gemstone-necklace__desktop@2x.webp 2x ">
                 <source media="(max-width: 767px)"
                   srcset="img/purple-gemstone-necklace__mobile.png 1x, img/purple-gemstone-necklace__mobile@2x.png 2x">
                 <source media="(max-width: 1023px)"
@@ -151,6 +175,12 @@
           <li class="suggestion__good">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/layered-choker-necklace__mobile.webp 1x,img/layered-choker-necklace__mobile@2x.webp 2x ">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/layered-choker-necklace__tablet.webp 1x,img/layered-choker-necklace__tablet@2x.webp 2x ">
+                <source type="image/webp" srcset="img/layered-choker-necklace__desktop.webp 1x,
+                img/layered-choker-necklace__desktop@2x.webp 2x ">
                 <source media="(max-width: 767px)"
                   srcset="img/layered-choker-necklace__mobile.png  1x, img/layered-choker-necklace__mobile@2x.png 2x">
                 <source media="(max-width: 1023px)"
@@ -167,6 +197,8 @@
           <li class="suggestion__good suggestion__good--hidden">
             <a href="#">
               <picture>
+                <source type="image/webp" srcset="img/dainty-gold-necklace.__desktop.webp 1x,
+                img/dainty-gold-necklace__desktop@2x.webp 2x ">
                 <img class=" suggestion__img" src="img/dainty-gold-necklace.__desktop.png"
                   srcset="img/dainty-gold-necklace__desktop@2x.png 2x" alt="Gold chain">
               </picture>
@@ -179,18 +211,8 @@
           <li class="suggestion__good suggestion__good--hidden">
             <a href="#">
               <picture>
-                <img class=" suggestion__img" src="img/galaxy-earrings__desktop.png"
-                  srcset="img/galaxy-earrings__desktop@2x.png 2x" alt="Galaxy-earrings">
-              </picture>
-            </a>
-            <a href="#">
-              <h3 class="suggestion__name">Galaxy-earrings</h3>
-            </a>
-            <p class="suggestion__price">$ 95</p>
-          </li>
-          <li class="suggestion__good suggestion__good--hidden">
-            <a href="#">
-              <picture>
+                <source type="image/webp" srcset="img/galaxy-earrings__desktop.webp 1x,
+                img/galaxy-earrings__desktop@2x.webp 2x ">
                 <img class=" suggestion__img" src="img/galaxy-earrings__desktop.png"
                   srcset="img/galaxy-earrings__desktop@2x.png 2x" alt="Galaxy-earrings">
               </picture>
@@ -203,6 +225,12 @@
           <li class="suggestion__good">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/purple-gemstone-necklace__mobile.webp 1x,img/purple-gemstone-necklace__mobile@2x.webp 2x ">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/purple-gemstone-necklace-main__tablet.webp 1x,img/purple-gemstone-necklace-main__tablet@2x.webp 2x ">
+                <source type="image/webp" srcset="img/purple-gemstone-necklace__desktop.webp 1x,
+                img/purple-gemstone-necklace__desktop@2x.webp 2x ">
                 <source media="(max-width: 767px)"
                   srcset="img/purple-gemstone-necklace__mobile.png 1x, img/purple-gemstone-necklace__mobile@2x.png 2x">
                 <source media="(max-width: 1023px)"
@@ -219,6 +247,12 @@
           <li class="suggestion__good">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/layered-choker-necklace__mobile.webp 1x,img/layered-choker-necklace__mobile@2x.webp 2x ">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/layered-choker-necklace__tablet.webp 1x,img/layered-choker-necklace__tablet@2x.webp 2x ">
+                <source type="image/webp" srcset="img/layered-choker-necklace__desktop.webp 1x,
+                img/layered-choker-necklace__desktop@2x.webp 2x ">
                 <source media="(max-width: 767px)"
                   srcset="img/layered-choker-necklace__mobile.png  1x, img/layered-choker-necklace__mobile@2x.png 2x">
                 <source media="(max-width: 1023px)"
@@ -235,6 +269,8 @@
           <li class="suggestion__good suggestion__good--hidden">
             <a href="#">
               <picture>
+                <source type="image/webp" srcset="img/dainty-gold-necklace.__desktop.webp 1x,
+                img/dainty-gold-necklace__desktop@2x.webp 2x ">
                 <img class=" suggestion__img" src="img/dainty-gold-necklace.__desktop.png"
                   srcset="img/dainty-gold-necklace__desktop@2x.png 2x" alt="Gold chain">
               </picture>
@@ -243,6 +279,20 @@
               <h3 class="suggestion__name">Gold chain</h3>
             </a>
             <p class="suggestion__price">$ 215</p>
+          </li>
+          <li class="suggestion__good suggestion__good--hidden">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/galaxy-earrings__desktop.webp 1x,
+                img/galaxy-earrings__desktop@2x.webp 2x ">
+                <img class=" suggestion__img" src="img/galaxy-earrings__desktop.png"
+                  srcset="img/galaxy-earrings__desktop@2x.png 2x" alt="Galaxy-earrings">
+              </picture>
+            </a>
+            <a href="#">
+              <h3 class="suggestion__name">Galaxy-earrings</h3>
+            </a>
+            <p class="suggestion__price">$ 95</p>
           </li>
         </ul>
       </div>
@@ -285,27 +335,27 @@
       <h2 class="faq__header">Frequently asked questions</h2>
       <div class="faq__items">
         <div class="faq__item faq__item--active">
-          <button type="button" class="button faq__button faq__button--up"></button>
-          <button type="button" class="button faq__button faq__button--down"></button>
+          <button type="button" class="button faq__button faq__button--up" aria-label="Open paragraph"></button>
+          <button type="button" class="button faq__button faq__button--down" aria-label="Close paragraph"></button>
           <p class="faq__item-header">What materials are <span> the jewellery made of?</span> </p>
           <p class="faq__text">Our jewellery is made of<br class="faq__break"> solid gold, silver or leather.
             Also, some jewellery contains precious and semiprecious stones and crystals.</p>
         </div>
         <div class="faq__item">
-          <button type="button" class="button faq__button faq__button--up"></button>
-          <button type="button" class="button faq__button faq__button--down"></button>
+          <button type="button" class="button faq__button faq__button--up" aria-label="Open paragraph"></button>
+          <button type="button" class="button faq__button faq__button--down" aria-label="Close paragraph"></button>
           <p class="faq__item-header">Which countries <span>do you deliver to? </span> </p>
           <p class="faq__text">Here will be text</p>
         </div>
         <div class="faq__item">
-          <button type="button" class="button faq__button faq__button--up"></button>
-          <button type="button" class="button faq__button faq__button--down"></button>
+          <button type="button" class="button faq__button faq__button--up" aria-label="Open paragraph"></button>
+          <button type="button" class="button faq__button faq__button--down" aria-label="Close paragraph"></button>
           <p class="faq__item-header">What are the <span>payment methods?</span></p>
           <p class="faq__text">Here will be text</p>
         </div>
         <div class="faq__item">
-          <button type="button" class="button faq__button faq__button--up"></button>
-          <button type="button" class="button faq__button faq__button--down"></button>
+          <button type="button" class="button faq__button faq__button--up" aria-label="Open paragraph"></button>
+          <button type="button" class="button faq__button faq__button--down" aria-label="Close paragraph"></button>
           <p class="faq__item-header">Can I return the <span>jewellery if it didn’t fit me?</span></p>
           <p class="faq__text">Here will be text</p>
         </div>
@@ -317,6 +367,12 @@
       <div class="social-photos__items">
         <div class="social-photos__wrap social-photos__wrap--small">
           <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/social-photo-1__mobile.webp 1x,img/social-photo-1__mobile@2x.webp 2x ">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/social-photo-1__tablet.webp 1x,img/social-photo-1__tablet@2x.webp 2x ">
+            <source type="image/webp" srcset="img/social-photo-1__desktop.webp 1x,
+                img/social-photo-1__desktop@2x.webp 2x ">
             <source media="(max-width: 767px)"
               srcset="img/social-photo-1__mobile.png  1x, img/social-photo-1__mobile@2x.png 2x">
             <source media="(max-width: 1023px)"
@@ -325,6 +381,12 @@
               srcset="img/social-photo-1__desktop@2x.png 2x" alt="Necklace">
           </picture>
           <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/social-photo-2__mobile.webp 1x,img/social-photo-2__mobile@2x.webp 2x ">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/social-photo-2__tablet.webp 1x,img/social-photo-2__tablet@2x.webp 2x ">
+            <source type="image/webp" srcset="img/social-photo-2__desktop.webp 1x,
+                img/social-photo-2__desktop@2x.webp 2x ">
             <source media="(max-width: 767px)"
               srcset="img/social-photo-2__mobile.png  1x, img/social-photo-2__mobile@2x.png 2x">
             <source media="(max-width: 1023px)"
@@ -335,6 +397,12 @@
         </div>
         <div class="social-photos__wrap social-photos__wrap--big">
           <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/social-photo-3__mobile.webp 1x,img/social-photo-3__mobile@2x.webp 2x ">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/social-photo-3__tablet.webp 1x,img/social-photo-3__tablet@2x.webp 2x ">
+            <source type="image/webp" srcset="img/social-photo-3__desktop.webp 1x,
+                img/social-photo-3__desktop@2x.webp 2x ">
             <source media="(max-width: 767px)"
               srcset="img/social-photo-3__mobile.png  1x, img/social-photo-3__mobile@2x.png 2x">
             <source media="(max-width: 1023px)"
@@ -345,6 +413,12 @@
         </div>
         <div class="social-photos__wrap social-photos__wrap--small">
           <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/social-photo-4__mobile.webp 1x,img/social-photo-4__mobile@2x.webp 2x ">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/social-photo-4__tablet.webp 1x,img/social-photo-4__tablet@2x.webp 2x ">
+            <source type="image/webp" srcset="img/social-photo-4__desktop.webp 1x,
+                img/social-photo-4__desktop@2x.webp 2x ">
             <source media="(max-width: 767px)"
               srcset="img/social-photo-4__mobile.png  1x, img/social-photo-4__mobile@2x.png 2x">
             <source media="(max-width: 1023px)"
@@ -353,6 +427,12 @@
               srcset="img/social-photo-4__desktop@2x.png 2x" alt="Necklace">
           </picture>
           <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/social-photo-5__mobile.webp 1x,img/social-photo-5__mobile@2x.webp 2x ">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/social-photo-5__tablet.webp 1x,img/social-photo-5__tablet@2x.webp 2x ">
+            <source type="image/webp" srcset="img/social-photo-5__desktop.webp 1x,
+                img/social-photo-5__desktop@2x.webp 2x ">
             <source media="(max-width: 767px)"
               srcset="img/social-photo-5__mobile.png  1x, img/social-photo-5__mobile@2x.png 2x">
             <source media="(max-width: 1023px)"
@@ -363,12 +443,20 @@
         </div>
         <div class="social-photos__wrap social-photos__wrap--small">
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/social-photo-6__tablet.webp 1x,img/social-photo-6__tablet@2x.webp 2x ">
+            <source type="image/webp" srcset="img/social-photo-6__desktop.webp 1x,
+                img/social-photo-6__desktop@2x.webp 2x ">
             <source media="(max-width: 1023px)"
               srcset="img/social-photo-6__tablet.png  1x, img/social-photo-6__tablet@2x.png 2x">
             <img class="social-photos__img social-photos__img--6" src="img/social-photo-6__desktop.png"
               srcset="img/social-photo-6__desktop@2x.png 2x" alt="Necklace">
           </picture>
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/social-photo-7__tablet.webp 1x,img/social-photo-7__tablet@2x.webp 2x ">
+            <source type="image/webp" srcset="img/social-photo-7__desktop.webp 1x,
+                img/social-photo-7__desktop@2x.webp 2x ">
             <source media="(max-width: 1023px)"
               srcset="img/social-photo-7__tablet.png  1x, img/social-photo-7__tablet@2x.png 2x">
             <img class="social-photos__img social-photos__img--7" src="img/social-photo-7__desktop.png"
@@ -382,9 +470,10 @@
         <h2 class="login__header">Login</h2>
         <button type="button" class="button login__close"></button>
         <form>
-
-          <input class="login__input" type="email" placeholder="Your E-mail">
-          <input class="login__input" type="password" placeholder="Password">
+          <label class="visually-hidden" for="email">Your e-mail</label>
+          <input class="login__input" type="email" placeholder="Your E-mail" id="email">
+          <label class="visually-hidden" for="password">Your password</label>
+          <input class="login__input" type="password" placeholder="Password" id="password">
           <a href="#" class="login__link login__link--forgot">Forgot your password?</a>
           <button type="submit" class="button login__button-enter">Log in</button>
         </form>
@@ -399,7 +488,8 @@
         <h2 class="subscribe__header">The good stuff in your inbox</h2>
         <p class="subscribe__text">News and updates from CH. No spam, we promise</p>
         <div class="subscribe__sign-up">
-          <input type="email" id="subscribe-email" placeholder="Your e-mail">
+          <label class="visually-hidden" for="subscribe-email">Your email to subscribe</label>
+          <input type="email" id="subscribe-email" placeholder="Your e-mail" id="subscribe-email">
           <a href="#" class="subscribe__link">Sign Up</a>
         </div>
 
@@ -417,141 +507,25 @@
         <a href="#" class="company-info__link">Contact Us</a>
       </div>
       <div class="social">
-        <a href="#" class="social__link social__link--facebook">
+        <a href="#" class="social__link social__link--facebook" aria-label="Facebook">
           <p class=social__text>Facebook</p>
         </a>
-        <a href="#" class="social__link social__link--instagram">
+        <a href="#" class="social__link social__link--instagram" aria-label="Instagram">
           <p class=social__text>Instagram</p>
         </a>
-        <a href="#" class="social__link social__link--pininterest">
+        <a href="#" class="social__link social__link--pininterest" aria-label="Pininterest">
           <p class=social__text>Pininterest</p>
         </a>
-        <a href="#" class="social__link social__link--twitter">
+        <a href="#" class="social__link social__link--twitter" aria-label="Twitter">
           <p class=social__text>Twitter</p>
         </a>
       </div>
     </footer>
   </div>
-  <script>
-    var headerMain = document.querySelector('.main-header');
-    var navToggle = document.querySelector('.main-header__menu-button');
-    headerMain.classList.remove('main-header--nojs');
-    navToggle.addEventListener('click', function () {
-      if (headerMain.classList.contains('main-header--open')) {
-        headerMain.classList.remove('main-header--open');
-      } else {
-        headerMain.classList.add('main-header--open');
-      }
-    });
-
-    var faqItem = document.querySelectorAll('.faq__item');
-    var faqUp = document.querySelector('.faq__button--up');
-    var faqDown = document.querySelector('.faq__button--down');
-
-
-    var openHandler = function (item) {
-      item.addEventListener('click', function (evt) {
-        if (evt.target.classList.contains('faq__button--up')) {
-          console.log(item)
-          item.classList.remove('faq__item--active')
-        }
-      })
-    }
-
-    var closeHandler = function (item) {
-      item.addEventListener('click', function (evt) {
-        if (evt.target.classList.contains('faq__button--down')) {
-          item.classList.add('faq__item--active')
-        }
-      })
-    }
-
-    faqItem.forEach(openHandler);
-    faqItem.forEach(closeHandler);
-
-    var loginModal = document.querySelector('.login');
-    var loginOpen = document.querySelector('.main-header__user-link--login');
-    var loginClose = loginModal.querySelector('.login__close');
-    var modalWrap = document.querySelector('.modal-wrap');
-
-    loginOpen.addEventListener('click', function () {
-      loginModal.classList.add('login--active');
-      modalWrap.classList.add('modal-wrap--active')
-    })
-
-    loginClose.addEventListener('click', function () {
-      loginModal.classList.remove('login--active');
-      modalWrap.classList.remove('modal-wrap--active')
-    })
-
-
-
-
-    var carousel = document.querySelector('.suggestion')
-    var pagesList = document.querySelector(".suggestion__pages-list");
-    var pagesListEl = document.querySelectorAll(".suggestion__page");
-
-    var picsList = carousel.querySelector(".suggestion__goods");
-    var picsListEl = carousel.querySelectorAll(".suggestion__good");
-
-
-    var position = 0;
-    var page = 1;
-
-    var widthPic = 300;
-    var countPic = 4;
-
-    var getParam = function () {
-      widthScreen = screen.width;
-      if (widthScreen < 1024 && widthScreen > 768) {
-        widthPic = 354;
-        countPic = 2;
-      } else {
-        if (widthScreen < 768) {
-          widthPic = 160;
-          countPic = 2;
-          pagesListEl.forEach(function (item) {
-            item.classList.add('suggestion__page--hidden');
-          })
-        pagesListEl[0].classList.remove('suggestion__page--hidden');
-        console.log(pagesListEl[pagesListEl.length-1])
-        pagesListEl[pagesListEl.length-1].classList.remove('suggestion__page--hidden');
-      } else {
-        widthPic = 300;
-        countPic = 4;
-      }
-    }
-    }
-
-    getParam();
-    var getPage = function () {
-      page = -(position / (widthPic * countPic));
-      return page;
-    }
-
-    var setActivePage = function () {
-      var activePage = document.querySelector('.suggestion__page--active');
-      activePage.classList.remove('suggestion__page--active');
-      pagesListEl[getPage()].classList.add('suggestion__page--active')
-    }
-
-    carousel.querySelector('.suggestion__button--left').onclick = function () {
-      position += widthPic * countPic;
-      position = Math.min(position, 0)
-      picsList.style.marginLeft = position + 'px';
-      setActivePage();
-
-    };
-
-    carousel.querySelector('.suggestion__button--right').onclick = function () {
-      position -= widthPic * countPic;
-      position = Math.max(position, -widthPic * (picsListEl.length - countPic));
-      picsList.style.marginLeft = position + 'px';
-      setActivePage();
-
-    };
-
-  </script>
+  <script src="js/header.js"></script>
+  <script src="js/faq.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>

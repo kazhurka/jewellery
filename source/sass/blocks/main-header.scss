@@ -79,7 +79,7 @@
 .main-header__search input {
   box-sizing: border-box;
   width: 140px;
-  height: 15px;
+  height: 22px;
 
   border: 1px solid white;
   outline: none;
@@ -89,8 +89,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  font-family: "Poppins", "Arial", sans-serif;
-  color: #1d1613;
+  color: #9b9997;
 }
 
 .main-header__logo-link {
@@ -134,7 +133,7 @@
 }
 
 .main-header__nav-list {
-  display: none;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -331,6 +330,11 @@
     display: block;
   }
 
+  .main-header__menu-button svg {
+    width: 25px;
+    height: 16px;
+  }
+
   .main-header__cart-button {
     position: absolute;
     top: 55px;
@@ -378,6 +382,7 @@
     top: 38px;
     left: 5%;
   }
+
 
   .main-header__cart-button {
     top: 38px;
