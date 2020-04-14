@@ -110,6 +110,15 @@
     margin-bottom: 47px;
   }
 
+  .subscribe input {
+    width: 50%;
+  }
+
+  .subscribe__sign-up {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .subscribe__header {
     width: 195px;
     margin-bottom: 13px;

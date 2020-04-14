@@ -10,6 +10,6 @@
     closeButton.addEventListener('click', function () {
       modalWrap.classList.remove('modal-wrap--active');
       modalCart.classList.remove('cart-modal--active');
-    })
-  })
+    });
+  });
 })();

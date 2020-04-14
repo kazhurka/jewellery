@@ -18,7 +18,7 @@
       widthPic = 300;
       countPic = 3;
     }
-    if (window.screen.width < 1024 && window.screen.width > 768) {
+    if (window.screen.width < 1024 && window.screen.width > 767) {
       widthPic = 354;
       countPic = 2;
     } else {

@@ -289,9 +289,13 @@
   .suggestion {
     width: 320px;
     min-width: 320px;
-    margin-bottom: 66px;
+    margin-bottom: 51px;
     padding-right: 15px;
     padding-left: 15px;
+  }
+
+  .suggestion--card {
+    margin-bottom: 66px;
   }
 
   .suggestion__link {

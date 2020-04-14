@@ -4,19 +4,19 @@
   var openHandler = function (item) {
     item.addEventListener('click', function (evt) {
       if (evt.target.classList.contains('faq__button--up')) {
-        console.log(item)
-        item.classList.remove('faq__item--active')
+
+        item.classList.remove('faq__item--active');
       }
-    })
-  }
+    });
+  };
 
   var closeHandler = function (item) {
     item.addEventListener('click', function (evt) {
       if (evt.target.classList.contains('faq__button--down')) {
-        item.classList.add('faq__item--active')
+        item.classList.add('faq__item--active');
       }
-    })
-  }
+    });
+  };
 
   faqItem.forEach(openHandler);
   faqItem.forEach(closeHandler);
