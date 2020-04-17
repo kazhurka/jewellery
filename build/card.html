@@ -38,10 +38,9 @@
     </a>
 
     <div class="main-header__user">
-      <a href="#" class="main-header__user-link">Login</a>
+      <a href="#" class="main-header__user-link main-header__user-link--login">Login</a>
       <a href="#" class="main-header__user-link main-header__user-link--cart">Cart <span>0</span></a>
     </div>
-
     <nav class="main-header__nav ">
       <ul class="main-header__nav-list">
         <li class="main-header__nav-item"><a href="#">What’s new</a></li>
@@ -363,7 +362,21 @@
           <a href="#" class="cart-modal__link cart-modal__link--checkout">Checkout</a>
         </div>
       </section>
-
+      <div class="modal-wrap">
+        <section class="login ">
+          <h2 class="login__header">Login</h2>
+          <button type="button" class="button login__close"></button>
+          <form>
+            <label class="visually-hidden" for="email">Your e-mail</label>
+            <input class="login__input" type="email" placeholder="Your E-mail" id="email">
+            <label class="visually-hidden" for="password">Your password</label>
+            <input class="login__input" type="password" placeholder="Password" id="password">
+            <a href="#" class="login__link login__link--forgot">Forgot your password?</a>
+            <button type="submit" class="button login__button-enter">Log in</button>
+          </form>
+          <a href="#" class="login__link login__link--sign-up">Don't have an account?<span>Sign up</span></a>
+        </section>
+      </div>
     </div>
   </main>
   <div class="wrap-bg">
