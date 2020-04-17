@@ -11,6 +11,10 @@ body {
   background-color: #ffffff;
 }
 
+.body--modal {
+  overflow: hidden;
+}
+
 .modal-wrap {
   position: fixed;
   top: 0;

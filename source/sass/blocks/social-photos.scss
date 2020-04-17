@@ -159,11 +159,36 @@
     height: 121px;
   }
 
-  .social-photos__wrap--small:nth-child(3) .social-photos__img--4 {
+  .social-photos__img--square-jewellery {
+    width: 130px;
+    height: 115px;
+  }
+
+  .social-photos__img--big-stones {
+    width: 130px;
+    height: 87px;
+  }
+
+  .social-photos__img--stones-with-ocean {
+    width: 130px;
+    height: 115px;
+  }
+
+  .social-photos__img--woman {
+    width: 145px;
+    height: 226px;
+  }
+
+  .social-photos__img--hands-close-up {
+    width: 145px;
+    height: 221px;
+  }
+
+  .social-photos__wrap--small:nth-child(3) .social-photos__img--hands-close-up {
     margin-right: 0;
   }
 
-  .social-photos__wrap--small:nth-child(3) .social-photos__img--5 {
+  .social-photos__wrap--small:nth-child(3) .social-photos__img--stones-with-ocean {
     margin-right: 15px;
   }
 

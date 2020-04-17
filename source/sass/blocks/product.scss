@@ -198,8 +198,18 @@
     height: 429px;
   }
 
+  .product__photo-wrap img {
+    width: 319px;
+    height: 286px;
+  }
+
   .product__photos-wrap {
     flex-direction: row;
+  }
+
+  .product__photos-wrap img {
+    width: 97px;
+    height: 129px;
   }
 }
 
@@ -252,6 +262,11 @@
 
   .product__photo-wrap {
     position: relative;
+  }
+
+  .product__photo-wrap img {
+    width: 290px;
+    height: 260px;
   }
 
   .product__pages {
