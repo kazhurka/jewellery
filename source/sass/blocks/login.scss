@@ -30,7 +30,7 @@
 }
 
 
-.login__header {
+.login h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
@@ -39,7 +39,7 @@
   text-align: center;
 }
 
-.login__input {
+.login input {
   box-sizing: border-box;
   width: 100%;
   height: 30px;
@@ -53,11 +53,11 @@
   outline: none;
 }
 
-.login__input:last-of-type {
+.login input:last-of-type {
   margin-bottom: 5px;
 }
 
-.login__input::placeholder {
+.login input::placeholder {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -100,7 +100,7 @@
   line-height: 18px;
 }
 
-.login__button-enter {
+.login__enter button {
   width: 340px;
   height: 68px;
   margin-top: 45px;
@@ -116,11 +116,11 @@
   outline: none;
 }
 
-.login__button-enter:hover {
+.login__enter button:hover {
   opacity: 70%;
 }
 
-.login__button-enter:active {
+.login__enter button:active {
   opacity: 50%;
 }
 
@@ -128,6 +128,9 @@
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+.login__close button {
 
   width: 14px;
   height: 14px;
@@ -151,7 +154,7 @@
     }
   }
 
-  .login__close {
+  .login__close button {
     width: 20px;
     height: 20px;
 
@@ -180,19 +183,19 @@
     }
   }
 
-  .login__button-enter {
+  .login__enter button {
     width: 240px;
     margin-top: 30px;
   }
 
-  .login__close {
+  .login__close button {
     width: 14px;
     height: 14px;
 
     background-image: url("../../img/cross-icon.svg");
   }
 
-  .login__header {
+  .login h2 {
     font-weight: bold;
     font-size: 24px;
     line-height: 31px;

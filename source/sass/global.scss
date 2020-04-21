@@ -33,6 +33,17 @@ body {
   display: block;
 }
 
+button {
+  margin: 0;
+  padding: 0;
+
+
+  list-style: none;
+
+  background: none;
+  border: none;
+}
+
 .img {
   max-width: 100%;
   height: auto;

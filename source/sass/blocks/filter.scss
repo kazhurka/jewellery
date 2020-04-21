@@ -34,11 +34,8 @@
 }
 
 
-.filter__group--active .filter__header {
-  margin-bottom: 23px;
-}
 
-.filter__header {
+.filter h3 {
   margin: 0;
 
   list-style: none;
@@ -48,7 +45,12 @@
   line-height: 21px;
 }
 
-.filter__list {
+
+.filter__group--active h3 {
+  margin-bottom: 23px;
+}
+
+.filter ul {
   display: none;
   margin: 0;
   padding: 0;
@@ -59,7 +61,7 @@
   line-height: 18px;
 }
 
-.filter__group--active .filter__list {
+.filter__group--active ul {
   display: block;
 }
 
@@ -75,7 +77,7 @@
   position: relative;
 }
 
-.filter__checkbox:checked + label::before {
+.filter input:checked + label::before {
   background-color: #a87b62;
 }
 
@@ -100,12 +102,12 @@
   opacity: 50%;
 }
 
-.filter__list li {
+.filter li {
   margin-bottom: 13px;
   padding-left: 35px;
 }
 
-.filter__list li:last-child {
+.filter li:last-child {
   margin-bottom: 0;
 }
 
@@ -143,7 +145,6 @@
 }
 
 .filter__submit {
-  outline: none;
   box-sizing: border-box;
   width: 250px;
   height: 68px;
@@ -156,10 +157,10 @@
 
   background: #a87b62;
   border: 1px solid #a87b62;
+  outline: none;
 }
 
 .filter__reset {
-  outline: none;
   display: block;
   margin: 0 auto 60px;
 
@@ -171,6 +172,7 @@
   text-decoration: none;
 
   border-bottom: 1px solid #a87b62;
+  outline: none;
 }
 
 .filter__submit:hover,
@@ -182,6 +184,7 @@
 .filter__reset:active {
   opacity: 50%;
 }
+
 
 @media (max-width: $desktop-width) {
   .filter {
@@ -273,12 +276,12 @@
     border-bottom: 1px solid #a87b62;
   }
 
-  .filter__header {
+  .filter h3 {
     font-size: 18px;
     line-height: 23px;
   }
 
-  .filter__list {
+  .filter ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;

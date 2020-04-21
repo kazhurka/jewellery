@@ -6,7 +6,7 @@
   padding-left: 30px;
 }
 
-.faq__header {
+.faq h2 {
   margin: 0;
   margin-bottom: 50px;
 
@@ -38,7 +38,7 @@
   border-top: 1px solid #a87b62;
 }
 
-.faq__item--active .faq__text {
+.faq__item--active p {
   display: block;
 }
 
@@ -46,7 +46,7 @@
   border-top: none;
 }
 
-.faq__text {
+.faq__item p {
   display: none;
   margin: 0;
   margin-top: 8px;
@@ -54,7 +54,7 @@
   margin-left: 45px;
 }
 
-.faq__item-header {
+.faq__item h3 {
   margin: 0;
   margin-left: 45px;
   padding-top: 44px;
@@ -65,7 +65,7 @@
   line-height: 23px;
 }
 
-.faq__break {
+.faq__item br {
   display: none;
 }
 
@@ -115,7 +115,7 @@
     padding-bottom: 43px;
   }
 
-  .faq__text {
+  .faq__item p {
     margin-top: 26px;
     margin-right: 100px;
   }
@@ -142,7 +142,7 @@
     padding-left: 15px;
   }
 
-  .faq__header {
+  .faq h2 {
     margin-bottom: 28px;
   }
 
@@ -155,7 +155,7 @@
     padding-bottom: 21px;
   }
 
-  .faq__item-header {
+  .faq__item h3 {
     max-width: 206px;
     margin-left: 25px;
     padding-top: 16px;
@@ -164,11 +164,11 @@
     line-height: 22px;
   }
 
-  .faq__break {
+  .faq__item br {
     display: inline;
   }
 
-  .faq__text {
+  .faq__item p {
     box-sizing: border-box;
     width: 209px;
     margin-top: 16px;
@@ -194,7 +194,7 @@
     background-image: url("../../img/arrow-top-icon__mobile.svg");
   }
 
-  .faq__item-header span {
+  .faq__item span {
     display: block;
   }
 }

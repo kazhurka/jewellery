@@ -4,7 +4,7 @@
   var MAINBUTTON = '0';
   var modalLogin = document.querySelector('.login');
   var addButton = document.querySelector('.main-header__user-link--login');
-  var closeButton = modalLogin.querySelector('.login__close');
+  var closeButton = modalLogin.querySelector('.login__close button');
   var modalWrap = document.querySelector('.modal-wrap');
   var body = document.querySelector('body');
 

@@ -2,7 +2,7 @@
   width: 43%;
 }
 
-.subscribe__header {
+.subscribe h2 {
   margin: 0;
   margin-bottom: 10px;
 
@@ -15,7 +15,7 @@
   color: #ffffff;
 }
 
-.subscribe__text {
+.subscribe p {
   margin: 0;
   margin-bottom: 40px;
 
@@ -119,12 +119,12 @@
     justify-content: space-between;
   }
 
-  .subscribe__header {
+  .subscribe h2 {
     width: 195px;
     margin-bottom: 13px;
   }
 
-  .subscribe__text {
+  .subscribe p {
     width: 235px;
   }
 

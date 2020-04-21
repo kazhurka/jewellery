@@ -49,12 +49,12 @@
       <a href="#" class="main-header__user-link main-header__user-link--cart">Cart <span>0</span></a>
     </div>
     <nav class="main-header__nav ">
-      <ul class="main-header__nav-list">
-        <li class="main-header__nav-item"><a href="#">What’s new</a></li>
-        <li class="main-header__nav-item"><a href="#">Chokers</a></li>
-        <li class="main-header__nav-item"><a href="#">Necklaces </a></li>
-        <li class="main-header__nav-item"><a href="#"> Rings </a></li>
-        <li class="main-header__nav-item"><a href="#">Earrings </a></li>
+      <ul>
+        <li><a href="#">What’s new</a></li>
+        <li><a href="#">Chokers</a></li>
+        <li><a href="#">Necklaces </a></li>
+        <li><a href="#"> Rings </a></li>
+        <li><a href="#">Earrings </a></li>
       </ul>
     </nav>
     <div class="main-header__for-customers">
@@ -69,319 +69,267 @@
       <div class="product__photos">
         <div class="product__photos-wrap">
           <picture>
-            <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/gold-necklace-2__tablet.webp 1x,img/gold-necklace-2__tablet@2x.webp 2x ">
             <source type="image/webp" srcset="img/gold-necklace-2__desktop.webp 1x,
             img/gold-necklace-2__desktop@2x.webp 2x ">
-            <source media="(max-width: 1023px)"
-              srcset="img/gold-necklace-2__tablet.png 1x, img/gold-necklace-2__tablet@2x.png 2x">
-            <img width="110" height="125" class="product__img" src="img/gold-necklace-2__desktop.png"
+            <!-- 1х: 110px 125px; 2x: 220px 250px; -->
+            <img width="110" height="125" src="img/gold-necklace-2__desktop.png"
               srcset="img/gold-necklace-2__desktop@2x.png 2x" alt="Gold necklace">
           </picture>
-
           <picture>
-            <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/gold-necklace-3__tablet.webp 1x,img/gold-necklace-3__tablet@2x.webp 2x ">
             <source type="image/webp" srcset="img/gold-necklace-3__desktop.webp 1x,
             img/gold-necklace-3__desktop@2x.webp 2x ">
-            <source media="(max-width: 1023px)"
-              srcset="img/gold-necklace-3__tablet.png 1x, img/gold-necklace-3__tablet@2x.png 2x">
-            <img width="110" height="125" class="product__img" src="img/gold-necklace-3__desktop.png"
+            <!-- 1х: 110px 125px; 2x: 220px 250px; -->
+            <img width="110" height="125" src="img/gold-necklace-3__desktop.png"
               srcset="img/gold-necklace-3__desktop@2x.png 2x" alt="Gold necklace">
           </picture>
           <picture>
-            <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/gold-necklace-4__tablet.webp 1x,img/gold-necklace-4__tablet@2x.webp 2x ">
             <source type="image/webp" srcset="img/gold-necklace-4__desktop.webp 1x,
             img/gold-necklace-4__desktop@2x.webp 2x ">
-            <source media="(max-width: 1023px)"
-              srcset="img/gold-necklace-4__tablet.png 1x, img/gold-necklace-4__tablet@2x.png 2x">
-            <img width="110" height="125" class="product__img" src="img/gold-necklace-4__desktop.png"
+            <!-- 1х: 110px 125px; 2x: 220px 250px; -->
+            <img width="110" height="125" src="img/gold-necklace-4__desktop.png"
               srcset="img/gold-necklace-4__desktop@2x.png 2x" alt="Gold necklace">
           </picture>
-
         </div>
         <div class="product__photo-wrap">
           <picture>
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="img/gold-necklace-1__mobile.webp 1x,img/gold-necklace-1__mobile@2x.webp 2x ">
-            <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/gold-necklace-1__tablet.webp 1x,img/gold-necklace-1__tablet@2x.webp 2x ">
             <source type="image/webp" srcset="img/gold-necklace-1__desktop.webp 1x,
             img/gold-necklace-1__desktop@2x.webp 2x ">
-            <source media="(max-width: 767px)"
-              srcset="img/gold-necklace-1__mobile.png 1x, img/gold-necklace-1__mobile@2x.png 2x">
-            <source media="(max-width: 1023px)"
-              srcset="img/gold-necklace-1__tablet.png 1x, img/gold-necklace-1__tablet@2x.png 2x">
-            <img width="470" height="435" class="product__img" src="img/gold-necklace-1__desktop.png"
+            <!-- 1х: 470px 435px; 2x: 940px 970px; -->
+            <img width="470" height="435" src="img/gold-necklace-1__desktop.png"
               srcset="img/gold-necklace-1__desktop@2x.png 2x" alt="Gold necklace">
           </picture>
           <div class="product__pages">
-            <p class="product__text">of</p>
-            <ul class="product__pages-list">
-              <li class="product__page">1</li>
-              <li class="product__page product__page--hidden">2</li>
-              <li class="product__page product__page--hidden">3</li>
-              <li class="product__page">4</li>
+            <p>of</p>
+            <ul>
+              <li> <a href="#" class="product__page">1</a></li>
+              <li> <a href="#" class="product__page product__page--hidden">2</a></li>
+              <li> <a href="#" class="product__page product__page--hidden">3</a></li>
+              <li> <a href="#" class="product__page">4</a></li>
             </ul>
           </div>
         </div>
 
       </div>
       <div class="product__card">
-        <h2 class="product__header">Gold Necklace </h2>
-        <p class="product__price">$ 115</p>
+        <div class="product__header">
+          <h2>Gold Necklace </h2>
+          <p>$ 115</p>
+        </div>
         <div class="product__desc">
-          <h3 class="product__desc-header">Description<span>Additional info</span></h3>
+          <h3>Description<span>Additional info</span></h3>
           <div class="product__desc-infos">
-            <p class="product__desc-info">Metal type</p>
-            <p class="product__desc-info">Stone</p>
-            <p class="product__desc-info">Size</p>
+            <p>Metal type</p>
+            <p>Stone</p>
+            <p>Size</p>
           </div>
           <div class="product__desc-values">
-            <p class="product__desc-value">Gold 585</p>
-            <p class="product__desc-value">Turquoise</p>
-            <p class="product__desc-value">18” / 20”</p>
+            <p>Gold 585</p>
+            <p>Turquoise</p>
+            <p>18” / 20”</p>
           </div>
         </div>
         <a class="button product__button">Add to cart</a>
         <div class="product__terms">
-          <p class="product__term">14 Day Returns</p>
-          <p class="product__term">2-Year Warranty</p>
-          <p class="product__term">Free Shipping</p>
+          <p>14 Day Returns</p>
+          <p>2-Year Warranty</p>
+          <p>Free Shipping</p>
         </div>
 
       </div>
     </section>
     <section class="suggestion suggestion--card">
-      <h2 class="suggestion__header">You may also like</h2>
+      <h2>You may also like</h2>
       <a href="catalog.html" class="suggestion__link">Shop Now</a>
-      <button type="button" class=" button suggestion__button suggestion__button--left"
-        aria-label="Arrow left"></button>
-      <button type="button" class="button suggestion__button suggestion__button--right"
-        aria-label="Arrow right"></button>
+      <div class="suggestion__button suggestion__button--left"><button type="button" aria-label="Arrow left"></button>
+      </div>
+      <div class="suggestion__button suggestion__button--right"><button type="button" aria-label="Arrow right"></button>
+      </div>
       <div class="suggestion__slider">
-        <ul class="suggestion__goods">
-          <li class="suggestion__good">
+        <ul>
+          <li>
             <a href="#">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/purple-gemstone-necklace__mobile.webp 1x,img/purple-gemstone-necklace__mobile@2x.webp 2x ">
-                <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/purple-gemstone-necklace-main__tablet.webp 1x,img/purple-gemstone-necklace-main__tablet@2x.webp 2x ">
                 <source type="image/webp" srcset="img/purple-gemstone-necklace__desktop.webp 1x,
                 img/purple-gemstone-necklace__desktop@2x.webp 2x ">
-                <source media="(max-width: 767px)"
-                  srcset="img/purple-gemstone-necklace__mobile.png 1x, img/purple-gemstone-necklace__mobile@2x.png 2x">
-                <source media="(max-width: 1023px)"
-                  srcset="img/purple-gemstone-necklace-main__tablet.png 1x, img/purple-gemstone-necklace-main__tablet@2x.png 2x">
-                <img width="270" height="284" class="suggestion__img" src="img/purple-gemstone-necklace__desktop.png"
+                <!-- 1х: 270px 284px; 2x: 540px 568px; -->
+                <img width="270" height="284" src="img/purple-gemstone-necklace__desktop.png"
                   srcset="img/purple-gemstone-necklace__desktop@2x.png 2x" alt="Necklace with amethys">
               </picture>
             </a>
             <a href="#">
-              <h3 class="suggestion__name">Necklace with amethys</h3>
+              <h3>Necklace with amethys</h3>
             </a>
-            <p class="suggestion__price">$ 145</p>
+            <p>$ 145</p>
           </li>
-          <li class="suggestion__good">
+          <li>
             <a href="#">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/layered-choker-necklace__mobile.webp 1x,img/layered-choker-necklace__mobile@2x.webp 2x ">
-                <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/layered-choker-necklace__tablet.webp 1x,img/layered-choker-necklace__tablet@2x.webp 2x ">
                 <source type="image/webp" srcset="img/layered-choker-necklace__desktop.webp 1x,
                 img/layered-choker-necklace__desktop@2x.webp 2x ">
-                <source media="(max-width: 767px)"
-                  srcset="img/layered-choker-necklace__mobile.png  1x, img/layered-choker-necklace__mobile@2x.png 2x">
-                <source media="(max-width: 1023px)"
-                  srcset="img/layered-choker-necklace__tablet.png  1x, img/layered-choker-necklace__tablet@2x.png 2x">
-                <img width="270" height="284" class=" suggestion__img" src="img/layered-choker-necklace__desktop.png"
+                <!-- 1х: 270px 284px; 2x: 540px 568px; -->
+                <img width="270" height="284" src="img/layered-choker-necklace__desktop.png"
                   srcset="img/layered-choker-necklace__desktop@2x.png 2x" alt="Layered сhoker">
               </picture>
             </a>
             <a href="#">
-              <h3 class="suggestion__name">Layered сhoker</h3>
+              <h3>Layered сhoker</h3>
             </a>
-            <p class="suggestion__price">$ 115</p>
+            <p>$ 115</p>
           </li>
-          <li class="suggestion__good suggestion__good--hidden">
+          <li>
             <a href="#">
               <picture>
                 <source type="image/webp" srcset="img/dainty-gold-necklace.__desktop.webp 1x,
                 img/dainty-gold-necklace__desktop@2x.webp 2x ">
-                <img width="270" height="284" class=" suggestion__img" src="img/dainty-gold-necklace.__desktop.png"
+                <!-- 1х: 270px 284px; 2x: 540px 568px; -->
+                <img width="270" height="284" src="img/dainty-gold-necklace.__desktop.png"
                   srcset="img/dainty-gold-necklace__desktop@2x.png 2x" alt="Gold chain">
               </picture>
             </a>
             <a href="#">
-              <h3 class="suggestion__name">Gold chain</h3>
+              <h3>Gold chain</h3>
             </a>
-            <p class="suggestion__price">$ 215</p>
+            <p>$ 215</p>
           </li>
-          <li class="suggestion__good suggestion__good--hidden">
+          <li>
             <a href="#">
               <picture>
                 <source type="image/webp" srcset="img/galaxy-earrings__desktop.webp 1x,
                 img/galaxy-earrings__desktop@2x.webp 2x ">
-                <img width="270" height="284" class=" suggestion__img" src="img/galaxy-earrings__desktop.png"
+                <!-- 1х: 270px 284px; 2x: 540px 568px; -->
+                <img width="270" height="284" src="img/galaxy-earrings__desktop.png"
                   srcset="img/galaxy-earrings__desktop@2x.png 2x" alt="Galaxy-earrings">
               </picture>
             </a>
             <a href="#">
-              <h3 class="suggestion__name">Galaxy-earrings</h3>
+              <h3>Galaxy-earrings</h3>
             </a>
-            <p class="suggestion__price">$ 95</p>
+            <p>$ 95</p>
           </li>
-          <li class="suggestion__good">
+          <li>
             <a href="#">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/purple-gemstone-necklace__mobile.webp 1x,img/purple-gemstone-necklace__mobile@2x.webp 2x ">
-                <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/purple-gemstone-necklace-main__tablet.webp 1x,img/purple-gemstone-necklace-main__tablet@2x.webp 2x ">
                 <source type="image/webp" srcset="img/purple-gemstone-necklace__desktop.webp 1x,
                 img/purple-gemstone-necklace__desktop@2x.webp 2x ">
-                <source media="(max-width: 767px)"
-                  srcset="img/purple-gemstone-necklace__mobile.png 1x, img/purple-gemstone-necklace__mobile@2x.png 2x">
-                <source media="(max-width: 1023px)"
-                  srcset="img/purple-gemstone-necklace-main__tablet.png 1x, img/purple-gemstone-necklace-main__tablet@2x.png 2x">
-                <img width="270" height="284" class=" suggestion__img" src="img/purple-gemstone-necklace__desktop.png"
+                <!-- 1х: 270px 284px; 2x: 540px 568px; -->
+                <img width="270" height="284" src="img/purple-gemstone-necklace__desktop.png"
                   srcset="img/purple-gemstone-necklace__desktop@2x.png 2x" alt="Necklace with amethys">
               </picture>
             </a>
             <a href="#">
-              <h3 class="suggestion__name">Necklace with amethys</h3>
+              <h3>Necklace with amethys</h3>
             </a>
-            <p class="suggestion__price">$ 145</p>
+            <p>$ 145</p>
           </li>
-          <li class="suggestion__good">
+          <li>
             <a href="#">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/layered-choker-necklace__mobile.webp 1x,img/layered-choker-necklace__mobile@2x.webp 2x ">
-                <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/layered-choker-necklace__tablet.webp 1x,img/layered-choker-necklace__tablet@2x.webp 2x ">
                 <source type="image/webp" srcset="img/layered-choker-necklace__desktop.webp 1x,
                 img/layered-choker-necklace__desktop@2x.webp 2x ">
-                <source media="(max-width: 767px)"
-                  srcset="img/layered-choker-necklace__mobile.png  1x, img/layered-choker-necklace__mobile@2x.png 2x">
-                <source media="(max-width: 1023px)"
-                  srcset="img/layered-choker-necklace__tablet.png  1x, img/layered-choker-necklace__tablet@2x.png 2x">
-                <img width="270" height="284" class=" suggestion__img" src="img/layered-choker-necklace__desktop.png"
+                <!-- 1х: 270px 284px; 2x: 540px 568px; -->
+                <img width="270" height="284" src="img/layered-choker-necklace__desktop.png"
                   srcset="img/layered-choker-necklace__desktop@2x.png 2x" alt="Layered сhoker">
               </picture>
             </a>
             <a href="#">
-              <h3 class="suggestion__name">Layered сhoker</h3>
+              <h3>Layered сhoker</h3>
             </a>
-            <p class="suggestion__price">$ 115</p>
+            <p>$ 115</p>
           </li>
-          <li class="suggestion__good suggestion__good--hidden">
+          <li>
             <a href="#">
               <picture>
                 <source type="image/webp" srcset="img/dainty-gold-necklace.__desktop.webp 1x,
                 img/dainty-gold-necklace__desktop@2x.webp 2x ">
-                <img width="270" height="284" class=" suggestion__img" src="img/dainty-gold-necklace.__desktop.png"
+                <!-- 1х: 270px 284px; 2x: 540px 568px; -->
+                <img width="270" height="284" src="img/dainty-gold-necklace.__desktop.png"
                   srcset="img/dainty-gold-necklace__desktop@2x.png 2x" alt="Gold chain">
               </picture>
             </a>
             <a href="#">
-              <h3 class="suggestion__name">Gold chain</h3>
+              <h3>Gold chain</h3>
             </a>
-            <p class="suggestion__price">$ 215</p>
+            <p>$ 215</p>
           </li>
-          <li class="suggestion__good suggestion__good--hidden">
+          <li>
             <a href="#">
               <picture>
                 <source type="image/webp" srcset="img/galaxy-earrings__desktop.webp 1x,
                 img/galaxy-earrings__desktop@2x.webp 2x ">
-                <img width="270" height="284" class=" suggestion__img" src="img/galaxy-earrings__desktop.png"
+                <!-- 1х: 270px 284px; 2x: 540px 568px; -->
+                <img width="270" height="284" src="img/galaxy-earrings__desktop.png"
                   srcset="img/galaxy-earrings__desktop@2x.png 2x" alt="Galaxy-earrings">
               </picture>
             </a>
             <a href="#">
-              <h3 class="suggestion__name">Galaxy-earrings</h3>
+              <h3>Galaxy-earrings</h3>
             </a>
-            <p class="suggestion__price">$ 95</p>
+            <p>$ 95</p>
           </li>
-          <li class="suggestion__good">
+          <li>
             <a href="#">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/purple-gemstone-necklace__mobile.webp 1x,img/purple-gemstone-necklace__mobile@2x.webp 2x ">
-                <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/purple-gemstone-necklace-main__tablet.webp 1x,img/purple-gemstone-necklace-main__tablet@2x.webp 2x ">
                 <source type="image/webp" srcset="img/purple-gemstone-necklace__desktop.webp 1x,
                 img/purple-gemstone-necklace__desktop@2x.webp 2x ">
-                <source media="(max-width: 767px)"
-                  srcset="img/purple-gemstone-necklace__mobile.png 1x, img/purple-gemstone-necklace__mobile@2x.png 2x">
-                <source media="(max-width: 1023px)"
-                  srcset="img/purple-gemstone-necklace-main__tablet.png 1x, img/purple-gemstone-necklace-main__tablet@2x.png 2x">
-                <img width="270" height="284" class=" suggestion__img" src="img/purple-gemstone-necklace__desktop.png"
+                <!-- 1х: 270px 284px; 2x: 540px 568px; -->
+                <img width="270" height="284" src="img/purple-gemstone-necklace__desktop.png"
                   srcset="img/purple-gemstone-necklace__desktop@2x.png 2x" alt="Necklace with amethys">
               </picture>
             </a>
             <a href="#">
-              <h3 class="suggestion__name">Necklace with amethys</h3>
+              <h3>Necklace with amethys</h3>
             </a>
-            <p class="suggestion__price">$ 145</p>
+            <p>$ 145</p>
           </li>
-          <li class="suggestion__good">
+          <li>
             <a href="#">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/layered-choker-necklace__mobile.webp 1x,img/layered-choker-necklace__mobile@2x.webp 2x ">
-                <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/layered-choker-necklace__tablet.webp 1x,img/layered-choker-necklace__tablet@2x.webp 2x ">
                 <source type="image/webp" srcset="img/layered-choker-necklace__desktop.webp 1x,
                 img/layered-choker-necklace__desktop@2x.webp 2x ">
-                <source media="(max-width: 767px)"
-                  srcset="img/layered-choker-necklace__mobile.png  1x, img/layered-choker-necklace__mobile@2x.png 2x">
-                <source media="(max-width: 1023px)"
-                  srcset="img/layered-choker-necklace__tablet.png  1x, img/layered-choker-necklace__tablet@2x.png 2x">
-                <img width="270" height="284" class=" suggestion__img" src="img/layered-choker-necklace__desktop.png"
+                <!-- 1х: 270px 284px; 2x: 540px 568px; -->
+                <img width="270" height="284" src="img/layered-choker-necklace__desktop.png"
                   srcset="img/layered-choker-necklace__desktop@2x.png 2x" alt="Layered сhoker">
               </picture>
             </a>
             <a href="#">
-              <h3 class="suggestion__name">Layered сhoker</h3>
+              <h3>Layered сhoker</h3>
             </a>
-            <p class="suggestion__price">$ 115</p>
+            <p>$ 115</p>
           </li>
-          <li class="suggestion__good suggestion__good--hidden">
+          <li>
             <a href="#">
               <picture>
                 <source type="image/webp" srcset="img/dainty-gold-necklace.__desktop.webp 1x,
                 img/dainty-gold-necklace__desktop@2x.webp 2x ">
-                <img width="270" height="284" class=" suggestion__img" src="img/dainty-gold-necklace.__desktop.png"
+                <!-- 1х: 270px 284px; 2x: 540px 568px; -->
+                <img width="270" height="284" src="img/dainty-gold-necklace.__desktop.png"
                   srcset="img/dainty-gold-necklace__desktop@2x.png 2x" alt="Gold chain">
               </picture>
             </a>
             <a href="#">
-              <h3 class="suggestion__name">Gold chain</h3>
+              <h3>Gold chain</h3>
             </a>
-            <p class="suggestion__price">$ 215</p>
+            <p>$ 215</p>
           </li>
-          <li class="suggestion__good suggestion__good--hidden">
+          <li>
             <a href="#">
               <picture>
                 <source type="image/webp" srcset="img/galaxy-earrings__desktop.webp 1x,
                 img/galaxy-earrings__desktop@2x.webp 2x ">
-                <img width="270" height="284" class=" suggestion__img" src="img/galaxy-earrings__desktop.png"
+                <!-- 1х: 270px 284px; 2x: 540px 568px; -->
+                <img width="270" height="284" src="img/galaxy-earrings__desktop.png"
                   srcset="img/galaxy-earrings__desktop@2x.png 2x" alt="Galaxy-earrings">
               </picture>
             </a>
             <a href="#">
-              <h3 class="suggestion__name">Galaxy-earrings</h3>
+              <h3>Galaxy-earrings</h3>
             </a>
-            <p class="suggestion__price">$ 95</p>
+            <p>$ 95</p>
           </li>
         </ul>
       </div>
       <div class="suggestion__pages">
-        <ul class="suggestion__pages__list">
+        <ul>
           <li> <a class="suggestion__page suggestion__page--active" href="#">1</a></li>
           <li><a class="suggestion__page " href="#">2</a></li>
           <li><a class="suggestion__page " href="#">3</a></li>
@@ -394,58 +342,64 @@
     </section>
     <div class="modal-wrap">
       <section class="cart-modal">
-        <p class="cart-modal__text">The item was added to your cart </p>
-        <button type="button" class=" button cart-modal__close"><span class="visually-hidden">Close</span></button>
+        <h2>The item was added to your cart </h2>
+        <div class="cart-modal__close"> <button type="button"><span class="visually-hidden">Close</span></button></div>
         <div class="cart-modal__item">
           <picture>
             <source media="(max-width: 767px)"
               srcset="img/gold-necklace-cart__mobile.png  1x, img/gold-necklace-cart__mobile@2x.png 2x">
             <source media="(max-width: 1023px)"
               srcset="img/gold-necklace-cart__tablet.png  1x, img/gold-necklace-cart__tablet@2x.png 2x">
-            <img width="84" height="79" class="cart-modal__img" src="img/gold-necklace-cart__desktop.png"
+            <!-- 1х: 84px 79px; 2x: 168px 158px; -->
+            <img width="84" height="79" src="img/gold-necklace-cart__desktop.png"
               srcset="img/gold-necklace-cart__desktop@2x.png 2x" alt="Layered сhoker">
           </picture>
           <div class="cart-modal__desc">
-            <h3 class="cart-modal__header">Gold Necklace </h3>
-            <p class="cart-modal__price">$ 115</p>
+            <h3>Gold Necklace </h3>
+            <p>$ 115</p>
           </div>
           <div class="cart-modal__quantity">
-            <button type="button" class=" button cart-modal__button cart-modal__button-more"></button>
-            <p class="cart-modal__quantity-text">1</p>
-            <button type="button" class=" button  cart-modal__button cart-modal__button-less"></button>
+            <div class="cart-modal__button cart-modal__button-more"><button type="button"></button></div>
+            <p>1</p>
+            <div class=" cart-modal__button cart-modal__button-less"><button type="button"></button></div>
           </div>
         </div>
         <div class="cart-modal__total">
-          <p class="cart-modal__total-item">You have <span>1</span> item in the cart</p>
-          <p class="cart-modal__total-price">Cart subtotal: $ <span>115</span> </p>
+          <div class="cart-modal__total-item">
+            <p>You have <span>1</span> item in the cart</p>
+          </div>
+          <div class="cart-modal__total-price">
+            <p>Cart subtotal: $ <span>115</span></p>
+          </div>
         </div>
         <div class="cart-modal__links">
           <a href="catalog.html" class="cart-modal__link cart-modal__link--shop">Continue shopping</a>
           <a href="#" class="cart-modal__link cart-modal__link--checkout">Checkout</a>
         </div>
       </section>
-      <div class="modal-wrap">
-        <section class="login ">
-          <h2 class="login__header">Login</h2>
-          <button type="button" class="button login__close"></button>
-          <form>
-            <label class="visually-hidden" for="email">Your e-mail</label>
-            <input class="login__input" type="email" placeholder="Your E-mail" id="email">
-            <label class="visually-hidden" for="password">Your password</label>
-            <input class="login__input" type="password" placeholder="Password" id="password">
-            <a href="#" class="login__link login__link--forgot">Forgot your password?</a>
-            <button type="submit" class="button login__button-enter">Log in</button>
-          </form>
-          <a href="#" class="login__link login__link--sign-up">Don't have an account?<span>Sign up</span></a>
-        </section>
-      </div>
     </div>
+    <div class="modal-wrap">
+      <section class="login ">
+        <h2>Login</h2>
+        <div class="login__close"><button type="button"></button></div>
+        <form>
+          <label class="visually-hidden" for="email">Your e-mail</label>
+          <input type="email" placeholder="Your E-mail" id="email">
+          <label class="visually-hidden" for="password">Your password</label>
+          <input type="password" placeholder="Password" id="password">
+          <a href="#" class="login__link login__link--forgot">Forgot your password?</a>
+          <div class="login__enter"> <button type="submit">Log in</button></div>
+        </form>
+        <a href="#" class="login__link login__link--sign-up">Don't have an account?<span>Sign up</span></a>
+      </section>
+    </div>
+
   </main>
   <div class="wrap-bg">
     <footer class="main-footer">
       <div class="subscribe">
-        <h2 class="subscribe__header">The good stuff in your inbox</h2>
-        <p class="subscribe__text">News and updates from CH. No spam, we promise</p>
+        <h2>The good stuff in your inbox</h2>
+        <p>News and updates from CH. No spam, we promise</p>
         <div class="subscribe__sign-up">
           <label class="visually-hidden" for="subscribe-email">Your email to subscribe</label>
           <input type="email" id="subscribe-email" placeholder="Your e-mail">
@@ -467,20 +421,21 @@
       </div>
       <div class="social">
         <a href="#" class="social__link social__link--facebook" aria-label="Facebook">
-          <p class=social__text>Facebook</p>
+          <p>Facebook</p>
         </a>
         <a href="#" class="social__link social__link--instagram" aria-label="Instagram">
-          <p class=social__text>Instagram</p>
+          <p>Instagram</p>
         </a>
         <a href="#" class="social__link social__link--pininterest" aria-label="Pininterest">
-          <p class=social__text>Pininterest</p>
+          <p>Pininterest</p>
         </a>
         <a href="#" class="social__link social__link--twitter" aria-label="Twitter">
-          <p class=social__text>Twitter</p>
+          <p>Twitter</p>
         </a>
       </div>
     </footer>
   </div>
+  <script src="js/login.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/header.js"></script>
   <script src="js/modal-cart.js"></script>

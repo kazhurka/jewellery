@@ -44,7 +44,7 @@
   background: rgba(86, 64, 52, 0.7);
 }
 
-.promo__text {
+.promo p {
   display: block;
   margin: 0;
 
@@ -57,12 +57,12 @@
   color: #ffffff;
 }
 
-.promo__text--catalog {
+.promo--catalog p {
   font-size: 22px;
   line-height: 29px;
 }
 
-.promo__text span {
+.promo span {
   display: block;
 
   font-style: italic;
@@ -121,7 +121,7 @@
     }
   }
 
-  .promo__text--catalog {
+  .promo--catalog p {
     width: 247px;
   }
 }
