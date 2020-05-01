@@ -20,7 +20,7 @@
   background-size: auto 138px;
 
   @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+  (min-resolution: $retina-dppx) {
     background-image: url("../img/log-in-bg__desktop@2x.png");
   }
 }
@@ -176,7 +176,7 @@
     background-image: url("../img/log-in-bg__tablet.png");
 
     @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dppx) {
       background-image: url("../img/log-in-bg__tablet@2x.png");
     }
   }
@@ -191,7 +191,7 @@
 
 @media (max-width: $tablet-width) {
   .login {
-    left: 50%;
+    left: 160px;
 
     width: 270px;
     height: 470px;
@@ -200,12 +200,13 @@
     padding-left: 15px;
 
     background-image: url("../img/log-in-bg__mobile.png");
+    background-size: auto 84px;
 
 
     @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dppx) {
       background-image: url("../img/log-in-bg__mobile@2x.png");
-      background-size: auto 84px;
+
     }
   }
 
