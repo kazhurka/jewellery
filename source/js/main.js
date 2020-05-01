@@ -238,10 +238,11 @@
   })();
 
   (function () {
+
+    var faqItem = document.querySelectorAll('.faq__item');
     if (!faqItem) {
       return;
     }
-    var faqItem = document.querySelectorAll('.faq__item');
     var openHandler = function (item) {
       item.addEventListener('click', function (evt) {
         if (evt.target.parentNode.classList.contains('faq__button--up')) {
