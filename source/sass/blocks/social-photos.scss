@@ -4,7 +4,7 @@
   min-width: 1024px;
   max-width: 1366px;
   margin: 0 auto;
-  margin-bottom: 127px;
+  margin-bottom: 126px;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -15,12 +15,12 @@
 
 .social-photos h2 {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 
   list-style-type: none;
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
+  font-size: 36px;
   line-height: 44px;
   font-family: "Cormorant Garamond", "Arial", sans-serif;
   text-align: center;
@@ -88,11 +88,14 @@
   .social-photos {
     width: 768px;
     min-width: 768px;
-    margin-bottom: 75px;
+    margin-bottom: 76px;
     padding-right: 5.8%;
     padding-left: 5.8%;
   }
 
+  .social-photos h2 {
+    margin-bottom: 17px;
+  }
 
   .social-photos__items {
     align-items: flex-end;
@@ -145,7 +148,6 @@
     width: 134px;
     height: 96px;
   }
-
 }
 
 @media (max-width: $tablet-width) {
@@ -157,6 +159,10 @@
     margin-bottom: 35px;
     padding-right: 15px;
     padding-left: 15px;
+  }
+
+  .social-photos h2 {
+    margin-bottom: 23px;
   }
 
   .social-photos__link {
@@ -236,6 +242,7 @@
   .social-photos__img--woman img {
     width: 100%;
     height: 226px;
+
     object-fit: cover;
   }
 

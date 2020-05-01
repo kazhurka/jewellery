@@ -1,7 +1,7 @@
 .company-info {
   display: flex;
   flex-direction: column;
-  padding-top: 7px;
+  padding-top: 4px;
 }
 
 .company-info__link {
@@ -22,6 +22,12 @@
 
 .company-info__link:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: $desktop-width) {
+  .company-info {
+    padding-top: 7px;
+  }
 }
 
 @media (max-width: $tablet-width) {

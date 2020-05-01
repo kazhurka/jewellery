@@ -6,26 +6,41 @@
   margin-bottom: 120px;
 
   background-color: brown;
-  background-image: url("../../img/main_bg_desktop.png");
+  background-image: url("../img/main_bg_desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
   @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
-    background-image: url("../../img/main_bg_desktop@2x.png");
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/main_bg_desktop@2x.png");
   }
+}
+
+.promo h1 {
+  display: block;
+  margin: 0;
+  margin-bottom: 3px;
+
+  list-style: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 44px;
+  font-family: "Cormorant Garamond", "Arial", sans-serif;
+  text-align: center;
+  color: #ffffff;
 }
 
 .promo--catalog {
   height: 261px;
   margin-bottom: 79px;
 
-  background-image: url("../../img/catalog-bg__desktop.png");
+  background-image: url("../img/catalog-bg__desktop.png");
 
   @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
-    background-image: url("../../img/catalog-bg__desktop@2x.png");
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/catalog-bg__desktop@2x.png");
   }
 }
 
@@ -48,16 +63,17 @@
   display: block;
   margin: 0;
 
-  font-style: italic;
+  font-style: normal;
   font-weight: bold;
   font-size: 45px;
   line-height: 58px;
-  font-family: "Cormorant Garamond", "Arial", sans-serif;
+  font-family: "Cormorant Garamond", "Arial", serif;
   text-align: center;
   color: #ffffff;
 }
 
 .promo--catalog p {
+  font-style: italic;
   font-size: 22px;
   line-height: 29px;
 }
@@ -74,25 +90,42 @@
 @media (max-width: $desktop-width) {
   .promo {
     min-width: 768px;
-    margin-bottom: 65px;
+    margin-bottom: 69px;
 
-    background-image: url("../../img/main-bg__tablet.png");
+    background-image: url("../img/main-bg__tablet.png");
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../../img/main-bg__tablet@2x.png");
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bg__tablet@2x.png");
     }
   }
 
+  .promo p {
+    min-width: 298px;
+
+    line-height: 55px;
+    text-align: left;
+  }
+
+  .promo h1 {
+    margin-bottom: 0;
+    padding-top: 20px;
+
+    line-height: 30px;
+  }
+
+  .promo span {
+    padding-left: 25px;
+  }
 
   .promo--catalog {
     margin-bottom: 50px;
 
-    background-image: url("../../img/catalog-bg__tablet.png");
+    background-image: url("../img/catalog-bg__tablet.png");
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../../img/catalog-bg__tablet@2x.png");
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/catalog-bg__tablet@2x.png");
     }
   }
 }
@@ -100,28 +133,53 @@
 @media (max-width: $tablet-width) {
   .promo {
     min-width: 320px;
-    margin-bottom: 54px;
+    margin-bottom: 60px;
 
-    background-image: url("../../img/main-bg__mobile.png");
+    background-image: url("../img/main-bg__mobile.png");
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../../img/main-bg__mobile@2x.png");
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bg__mobile@2x.png");
     }
+  }
+
+  .promo p {
+    font-size: 38px;
+    line-height: 49px;
+    text-align: center;
+  }
+
+  .promo span {
+    padding-left: 0;
+
+    font-size: 34px;
+    line-height: 36px;
   }
 
   .promo--catalog {
     margin-bottom: 40px;
 
-    background-image: url("../../img/catalog-bg__mobile.png");
+    background-image: url("../img/catalog-bg__mobile.png");
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../../img/catalog-bg__mobile@2x.png");
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/catalog-bg__mobile@2x.png");
     }
   }
 
   .promo--catalog p {
+    min-width: auto;
     width: 247px;
+
+    font-style: italic;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+  }
+
+  .promo h1 {
+    padding-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
   }
 }

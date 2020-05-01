@@ -4,12 +4,18 @@
   margin-right: 50px;
 }
 
+
+.filter button {
+  cursor: pointer;
+}
+
+
 .filter__form {
   height: 100%;
   margin: 0;
 }
 
-.filter__open-button {
+.filter__open button {
   display: none;
 }
 
@@ -27,15 +33,15 @@
   border-bottom: none;
 }
 
-.filter__group:last-of-type {
+.filter__group--bottom {
   margin-bottom: 30px;
 
   border-bottom: 1px solid #a87b62;
 }
 
 
-
 .filter h3 {
+  cursor: pointer;
   margin: 0;
 
   list-style: none;
@@ -75,6 +81,8 @@
 
 .filter label {
   position: relative;
+
+  cursor: pointer;
 }
 
 .filter input:checked + label::before {
@@ -105,6 +113,8 @@
 .filter li {
   margin-bottom: 13px;
   padding-left: 35px;
+
+  cursor: pointer;
 }
 
 .filter li:last-child {
@@ -120,6 +130,7 @@
 
   background-repeat: no-repeat;
   background-position: 0 0;
+  cursor: pointer;
 }
 
 .filter__button--up {
@@ -131,20 +142,20 @@
 .filter__button--down {
   top: 30px;
 
-  background-image: url("../../img/arrow-bottom-icon.svg");
+  background-image: url("../img/arrow-bottom-icon.svg");
 }
 
 .filter__group--active .filter__button--up {
   display: block;
 
-  background-image: url("../../img/arrow-top-icon.svg");
+  background-image: url("../img/arrow-top-icon.svg");
 }
 
 .filter__group--active .filter__button--down {
   display: none;
 }
 
-.filter__submit {
+.filter__submit button {
   box-sizing: border-box;
   width: 250px;
   height: 68px;
@@ -160,7 +171,7 @@
   outline: none;
 }
 
-.filter__reset {
+.filter__reset button {
   display: block;
   margin: 0 auto 60px;
 
@@ -175,13 +186,13 @@
   outline: none;
 }
 
-.filter__submit:hover,
-.filter__reset:hover {
+.filter__submit button:hover,
+.filter__reset button:hover {
   opacity: 70%;
 }
 
-.filter__submit:active,
-.filter__reset:active {
+.filter__submit button:active,
+.filter__reset button:active {
   opacity: 50%;
 }
 
@@ -201,7 +212,7 @@
     display: none;
   }
 
-  .filter__open-button {
+  .filter__open button {
     display: block;
     box-sizing: border-box;
     width: 678px;
@@ -216,7 +227,7 @@
     border: 1px solid #a87b62;
   }
 
-  .filter__close-button {
+  .filter__close button {
     position: absolute;
     top: -16px;
     right: -16px;
@@ -225,10 +236,8 @@
     width: 32px;
     height: 32px;
 
-    background-image: url("../../img/cross-in-circle.svg");
+    background-image: url("../img/cross-in-circle.svg");
     background-repeat: no-repeat;
-    // background: #1D1613;
-    // border-radius: 50%;
     background-position: 0 0;
   }
 
@@ -236,11 +245,11 @@
     display: block;
   }
 
-  .filter--active .filter__open-button {
+  .filter--active .filter__open button {
     display: none;
   }
 
-  .filter--active .filter__close-button {
+  .filter--active .filter__close button {
     display: block;
   }
 
@@ -260,11 +269,15 @@
   }
 
   .filter__group--active .filter__button--up {
-    background-image: url("../../img/arrow-top-icon__tablet.svg");
+    background-image: url("../img/arrow-top-icon__tablet.svg");
+  }
+
+  .filter__group--bottom {
+    margin-bottom: 40px;
   }
 
   .filter__button--down {
-    background-image: url("../../img/arrow-bottom-icon__tablet.svg");
+    background-image: url("../img/arrow-bottom-icon__tablet.svg");
   }
 
   .filter__group {
@@ -287,14 +300,14 @@
     line-height: 21px;
   }
 
-  .filter__submit {
+  .filter__submit button {
     box-sizing: border-box;
     width: 362px;
     margin-right: 40px;
     margin-left: 40px;
   }
 
-  .filter__reset {
+  .filter__reset button {
     display: block;
     box-sizing: border-box;
     width: 362px;
@@ -319,17 +332,21 @@
     padding: 20px;
   }
 
-  .filter__open-button {
+  .filter__group--bottom {
+    margin-bottom: 30px;
+  }
+
+  .filter__open button {
     width: 290px;
   }
 
-  .filter__submit {
+  .filter__submit button {
     width: 230px;
     margin-right: 20px;
     margin-left: 20px;
   }
 
-  .filter__reset {
+  .filter__reset button {
     width: 230px;
     margin-right: 20px;
     margin-left: 20px;

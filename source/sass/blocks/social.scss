@@ -1,7 +1,7 @@
 .social {
   display: flex;
   flex-direction: column;
-  padding-top: 7px;
+  padding-top: 5px;
 }
 
 .social__link {
@@ -41,7 +41,7 @@
   width: 15px;
   height: 15px;
 
-  background-image: url("../../img/instagram-icon.svg");
+  background-image: url("../img/instagram-icon.svg");
 }
 
 .social p {
@@ -49,26 +49,32 @@
 }
 
 .social__link--facebook::before {
-  width: 8px;
+  width: 20px;
   height: 15px;
 
-  background-image: url("../../img/facebook-icon.svg");
+  background-image: url("../img/facebook-icon.svg");
+  background-position: 5px;
 }
 
 .social__link--pininterest::before {
   width: 15px;
   height: 15px;
 
-  background-image: url("../../img/pininterest-icon.svg");
+  background-image: url("../img/pininterest-icon.svg");
 }
 
 .social__link--twitter::before {
   width: 15px;
   height: 13px;
 
-  background-image: url("../../img/twitter-icon.svg");
+  background-image: url("../img/twitter-icon.svg");
 }
 
+@media (max-width: $desktop-width) {
+  .social {
+    padding-top: 7px;
+  }
+}
 
 @media (max-width: $tablet-width) {
   .social {
@@ -97,7 +103,8 @@
     width: 12px;
     height: 21px;
 
-    background-image: url("../../img/facebook-icon__mobile.svg");
+    background-image: url("../img/facebook-icon__mobile.svg");
+    background-position: 0;
   }
 
   .social__link--pininterest {
@@ -108,7 +115,7 @@
     width: 20px;
     height: 21px;
 
-    background-image: url("../../img/pininterest-icon__mobile.svg");
+    background-image: url("../img/pininterest-icon__mobile.svg");
   }
 
   .social__link--twitter {
@@ -121,7 +128,7 @@
     width: 20px;
     height: 20px;
 
-    background-image: url("../../img/twitter__mobile.svg");
+    background-image: url("../img/twitter__mobile.svg");
   }
 
   .social__link--instagram {
@@ -132,6 +139,6 @@
     width: 20px;
     height: 21px;
 
-    background-image: url("../../img/instagram-icon__mobile.svg");
+    background-image: url("../img/instagram-icon__mobile.svg");
   }
 }

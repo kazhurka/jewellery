@@ -1,12 +1,9 @@
 .main-footer {
-  // position: absolute;
-  // bottom: 0;
-  // left: 0;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   min-width: 1024px;
-  max-width: 1170px;
+  max-width: 1190px;
   margin: 0 auto;
   padding-top: 90px;
   padding-right: 10px;
@@ -30,7 +27,8 @@
     min-width: 768px;
     max-width: 1024px;
     padding-top: 50px;
-    padding-right: 19%;
+    padding-right: 19.5%;
+    padding-bottom: 55px;
     padding-left: 5.8%;
   }
 }

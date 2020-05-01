@@ -8,20 +8,20 @@
   box-sizing: border-box;
   width: 430px;
   height: 586px;
-  padding-top: 150px;
+  padding-top: 188px;
   padding-right: 45px;
   padding-left: 45px;
 
   background: #f0eae4;
-  background-image: url("../../img/log-in-bg__desktop.png");
+  background-image: url("../img/log-in-bg__desktop.png");
   background-repeat: no-repeat;
   box-shadow: 0 5px 32px rgba(226, 221, 215, 0.24);
   transform: translate(-50%, 0);
   background-size: auto 138px;
 
   @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
-    background-image: url("../../img/log-in-bg__desktop@2x.png");
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/log-in-bg__desktop@2x.png");
   }
 }
 
@@ -31,6 +31,8 @@
 
 
 .login h2 {
+  margin: 0;
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
@@ -43,7 +45,7 @@
   box-sizing: border-box;
   width: 100%;
   height: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   list-style: none;
 
@@ -51,6 +53,12 @@
   border: none;
   border-bottom: 1px solid #1d1613;
   outline: none;
+}
+
+.login input:hover,
+.login input:active {
+  border: 1px solid #1d1613;
+  opacity: 75%;
 }
 
 .login input:last-of-type {
@@ -73,6 +81,14 @@
   line-height: 21px;
   color: #9b9997;
   text-decoration: none;
+}
+
+.login__link:hover {
+  opacity: 70%;
+}
+
+.login__link:active {
+  opacity: 50%;
 }
 
 .login__link--sign-up {
@@ -101,6 +117,7 @@
 }
 
 .login__enter button {
+  cursor: pointer;
   width: 340px;
   height: 68px;
   margin-top: 45px;
@@ -131,13 +148,23 @@
 }
 
 .login__close button {
-
+  cursor: pointer;
+  outline: none;
   width: 14px;
   height: 14px;
 
-  background-image: url("../../img/cross-icon.svg");
+  background-image: url("../img/cross-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.login__close button:hover,
+.login__close button:focus {
+  opacity: 70%;
+}
+
+.login__close button:active {
+  opacity: 50%;
 }
 
 @media (max-width: $desktop-width) {
@@ -146,11 +173,11 @@
     padding-right: 50px;
     padding-left: 50px;
 
-    background-image: url("../../img/log-in-bg__tablet.png");
+    background-image: url("../img/log-in-bg__tablet.png");
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../../img/log-in-bg__tablet@2x.png");
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/log-in-bg__tablet@2x.png");
     }
   }
 
@@ -158,7 +185,7 @@
     width: 20px;
     height: 20px;
 
-    background-image: url("../../img/big-cross-icon.svg");
+    background-image: url("../img/big-cross-icon.svg");
   }
 }
 
@@ -172,14 +199,13 @@
     padding-right: 15px;
     padding-left: 15px;
 
-    background-image: url("../../img/log-in-bg__mobile.png");
+    background-image: url("../img/log-in-bg__mobile.png");
 
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../../img/log-in-bg__mobile@2x.png");
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/log-in-bg__mobile@2x.png");
       background-size: auto 84px;
-
     }
   }
 
@@ -192,7 +218,7 @@
     width: 14px;
     height: 14px;
 
-    background-image: url("../../img/cross-icon.svg");
+    background-image: url("../img/cross-icon.svg");
   }
 
   .login h2 {

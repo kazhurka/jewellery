@@ -11,6 +11,10 @@
   padding-left: 10px;
 }
 
+.suggestion__pages p {
+  display: none;
+}
+
 .suggestion--card {
   margin-bottom: 106px;
 }
@@ -69,11 +73,9 @@
 
 .suggestion__button {
   position: absolute;
-
 }
 
 .suggestion__button button {
-
   width: 30px;
   height: 9px;
 
@@ -82,24 +84,21 @@
 }
 
 .suggestion__button--left {
-  top: 8%;
+  top: 6.5%;
   left: 7%;
-
-
 }
 
 .suggestion__button--left button {
-  background-image: url("../../img/arrow-left.svg");
+  background-image: url("../img/arrow-left.svg");
 }
 
 .suggestion__button--right {
-  top: 8%;
+  top: 6.5%;
   right: 7%;
-
 }
 
 .suggestion__button--right button {
-  background-image: url("../../img/arrow-right-icon.svg");
+  background-image: url("../img/arrow-right-icon.svg");
 }
 
 .suggestion__slider ul {
@@ -125,9 +124,9 @@
 }
 
 .suggestion__slider a {
-  text-decoration: none;
   list-style: none;
   color: #1d1613;
+  text-decoration: none;
 }
 
 .suggestion h3 {
@@ -213,7 +212,7 @@
     box-sizing: border-box;
     width: 768px;
     min-width: 768px;
-    margin-bottom: 63px;
+    margin-bottom: 67px;
     padding-right: 5.8%;
     padding-left: 5.8%;
   }
@@ -224,7 +223,11 @@
   }
 
   .suggestion--card {
-    margin-bottom: 76px;
+    margin-bottom: 78px;
+  }
+
+  .suggestion h2 {
+    margin-bottom: 18px;
   }
 
   .suggestion__slider {
@@ -233,31 +236,25 @@
     margin-bottom: 36px;
   }
 
-  .suggestion__button button{
+  .suggestion__button button {
     width: 36px;
     height: 20px;
   }
 
   .suggestion__button--left {
-    top: 7.5%;
     left: 5.9%;
-
-
   }
 
   .suggestion__button--left button {
-    background-image: url("../../img/arrow-left-icon__tablet.svg");
+    background-image: url("../img/arrow-left-icon__tablet.svg");
   }
 
   .suggestion__button--right {
-    top: 7.5%;
     right: 5.9%;
-
-
   }
 
   .suggestion__button--right button {
-    background-image: url("../../img/arrow-right-icon__tablet.svg");
+    background-image: url("../img/arrow-right-icon__tablet.svg");
   }
 
   .suggestion__link {
@@ -299,16 +296,29 @@
   .suggestion {
     width: 320px;
     min-width: 320px;
-    margin-bottom: 51px;
+    margin-bottom: 32px;
     padding-right: 15px;
     padding-left: 15px;
   }
 
+  .suggestion__pages p {
+    display: inline-block;
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    font-family: "Poppins", "Arial", sans-serif;
+    vertical-align: middle;
+  }
+
   .suggestion--card {
-    margin-bottom: 66px;
+    margin-bottom: 45px;
   }
 
   .suggestion__link {
+    line-height: 26px;
     margin-bottom: 42px;
   }
 
@@ -342,17 +352,27 @@
   .suggestion__pages {
     position: relative;
 
+    display: flex;
+    justify-content: center;
     width: 290px;
   }
 
   .suggestion__pages ul {
     position: relative;
 
-    width: 84px;
+    width: 18px;
+    margin: 0;
+    margin-right: 6px;
   }
 
   .suggestion__page {
     color: #1d1613;
+  }
+
+  .suggestion__page--active {
+    position: absolute;
+    top: 0;
+    left: 5px;
   }
 
   .suggestion__pages li {
@@ -360,11 +380,8 @@
   }
 
   .suggestion__pages span {
-    position: absolute;
-    top: 0;
-    left: 134px;
-
     display: inline-block;
+    margin-right: 8px;
 
     font-style: normal;
     font-weight: 500;
@@ -375,6 +392,10 @@
   }
 
   .suggestion__page--hidden {
+    display: none;
+  }
+
+  .suggestion__button {
     display: none;
   }
 }

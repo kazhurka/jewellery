@@ -1,7 +1,7 @@
 .order-info {
   display: flex;
   flex-direction: column;
-  padding-top: 5px;
+  padding-top: 4px;
 }
 
 .order-info__link {
@@ -24,6 +24,11 @@
   margin-bottom: 0;
 }
 
+@media (max-width: $desktop-width) {
+  .order-info {
+    padding-top: 7px;
+  }
+}
 
 @media (max-width: $tablet-width) {
   .order-info {

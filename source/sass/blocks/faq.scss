@@ -13,7 +13,7 @@
   list-style-type: none;
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
+  font-size: 36px;
   line-height: 44px;
   font-family: "Cormorant Garamond", "Arial", sans-serif;
   text-align: center;
@@ -33,14 +33,11 @@
 
   box-sizing: border-box;
   height: auto;
-  padding-bottom: 42px;
+  padding-bottom: 45px;
 
   border-top: 1px solid #a87b62;
 }
 
-.faq__item--active p {
-  display: block;
-}
 
 .faq__item:first-child {
   border-top: none;
@@ -51,13 +48,17 @@
   margin: 0;
   margin-top: 8px;
   margin-right: 42%;
-  margin-left: 45px;
+  margin-left: 48px;
+}
+
+.faq__item--active p {
+  display: block;
 }
 
 .faq__item h3 {
   margin: 0;
-  margin-left: 45px;
-  padding-top: 44px;
+  margin-left: 43px;
+  padding-top: 41px;
 
   font-style: normal;
   font-weight: 500;
@@ -71,13 +72,15 @@
 
 .faq__button {
   position: absolute;
-  right: 50px;
-
-  width: 16px;
-  height: 10px;
+  right: 45px;
 
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.faq__button button {
+  width: 20px;
+  height: 20px;
 }
 
 .faq__button--up {
@@ -89,13 +92,13 @@
 .faq__button--down {
   top: 50px;
 
-  background-image: url("../../img/arrow-bottom-icon.svg");
+  background-image: url("../img/arrow-bottom-icon.svg");
 }
 
 .faq__item--active .faq__button--up {
   display: block;
 
-  background-image: url("../../img/arrow-top-icon.svg");
+  background-image: url("../img/arrow-top-icon.svg");
 }
 
 .faq__item--active .faq__button--down {
@@ -112,7 +115,11 @@
   }
 
   .faq__item {
-    padding-bottom: 43px;
+    padding-bottom: 47px;
+  }
+
+  .faq__item h3 {
+    margin-left: 49px;
   }
 
   .faq__item p {
@@ -126,11 +133,11 @@
   }
 
   .faq__button--down {
-    background-image: url("../../img/arrow-bottom-icon__tablet.svg");
+    background-image: url("../img/arrow-bottom-icon__tablet.svg");
   }
 
   .faq__item--active .faq__button--up {
-    background-image: url("../../img/arrow-top-icon__tablet.svg");
+    background-image: url("../img/arrow-top-icon__tablet.svg");
   }
 }
 
@@ -187,11 +194,11 @@
   }
 
   .faq__button--down {
-    background-image: url("../../img/arrow-bottom-icon__mobile.svg");
+    background-image: url("../img/arrow-bottom-icon__mobile.svg");
   }
 
   .faq__button--up {
-    background-image: url("../../img/arrow-top-icon__mobile.svg");
+    background-image: url("../img/arrow-top-icon__mobile.svg");
   }
 
   .faq__item span {
