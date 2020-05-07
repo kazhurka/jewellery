@@ -119,10 +119,6 @@
   margin-right: 30px;
 }
 
-.suggestion__slider li:last-child {
-  margin-right: 0;
-}
-
 .suggestion__slider a {
   list-style: none;
   color: #1d1613;
@@ -163,9 +159,10 @@
 }
 
 .suggestion__pages ul {
-  width: 53px;
+  width: 62px;
   margin: 0 auto;
   padding: 0;
+  padding-left: 10px;
 
   list-style: none;
   text-align: center;
@@ -173,19 +170,15 @@
 
 .suggestion__pages li {
   display: inline-block;
-  margin-right: 10px;
 }
 
-.suggestion__pages li:nth-child(3) {
-  margin-right: 0;
-}
 
 .suggestion__pages span {
   display: none;
 }
 
 .suggestion__page {
-  margin-right: 15px;
+  margin-right: 10px;
 
   font-style: normal;
   font-weight: 500;
@@ -197,10 +190,6 @@
 
 .suggestion__page--hidden {
   display: none;
-}
-
-.suggestion__page:last-child {
-  margin-right: 0;
 }
 
 .suggestion__page--active {
@@ -267,6 +256,10 @@
     width: 324px;
   }
 
+  .suggestion__page {
+    margin-right: 0;
+  }
+
   .suggestion__page--hidden {
     display: block;
   }
@@ -279,16 +272,9 @@
     width: 129px;
   }
 
-  .suggestion__pages li:nth-child(3) {
-    margin-right: 9px;
-  }
 
   .suggestion__pages li {
     margin-right: 9px;
-  }
-
-  .suggestion__pages li:nth-child(6) {
-    margin-right: 0;
   }
 }
 
@@ -318,8 +304,9 @@
   }
 
   .suggestion__link {
-    line-height: 26px;
     margin-bottom: 42px;
+
+    line-height: 26px;
   }
 
   .suggestion img {
@@ -359,6 +346,7 @@
 
   .suggestion__pages ul {
     position: relative;
+    padding-left: 0;
 
     width: 18px;
     margin: 0;

@@ -15,12 +15,12 @@
   background: #f0eae4;
   background-image: url("../img/log-in-bg__desktop.png");
   background-repeat: no-repeat;
+  background-size: auto 138px;
   box-shadow: 0 5px 32px rgba(226, 221, 215, 0.24);
   transform: translate(-50%, 0);
-  background-size: auto 138px;
 
   @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dppx) {
     background-image: url("../img/log-in-bg__desktop@2x.png");
   }
 }
@@ -33,6 +33,7 @@
 .login h2 {
   margin: 0;
   margin-bottom: 30px;
+
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
@@ -117,7 +118,6 @@
 }
 
 .login__enter button {
-  cursor: pointer;
   width: 340px;
   height: 68px;
   margin-top: 45px;
@@ -131,6 +131,7 @@
   background: #a87b62;
   border: 1px solid #a87b62;
   outline: none;
+  cursor: pointer;
 }
 
 .login__enter button:hover {
@@ -148,14 +149,14 @@
 }
 
 .login__close button {
-  cursor: pointer;
-  outline: none;
   width: 14px;
   height: 14px;
 
   background-image: url("../img/cross-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  outline: none;
+  cursor: pointer;
 }
 
 .login__close button:hover,
@@ -176,7 +177,7 @@
     background-image: url("../img/log-in-bg__tablet.png");
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       background-image: url("../img/log-in-bg__tablet@2x.png");
     }
   }
@@ -204,9 +205,8 @@
 
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       background-image: url("../img/log-in-bg__mobile@2x.png");
-
     }
   }
 
