@@ -41,7 +41,9 @@
 
 
 .subscribe__sign-up button {
+  cursor: pointer;
   position: relative;
+  outline: none;
 
   display: block;
   min-height: 30px;

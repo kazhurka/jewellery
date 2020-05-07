@@ -1,12 +1,14 @@
 .login {
   position: absolute;
-  top: 100px;
+  top: 10%;
   left: 50%;
   z-index: 2;
 
   display: none;
   box-sizing: border-box;
-  width: 430px;
+  max-width: 430px;
+  min-width: 270px;
+  width: 31%;
   height: 586px;
   padding-top: 188px;
   padding-right: 45px;
@@ -15,7 +17,7 @@
   background: #f0eae4;
   background-image: url("../img/log-in-bg__desktop.png");
   background-repeat: no-repeat;
-  background-size: auto 138px;
+  background-size: 100% 138px;
   box-shadow: 0 5px 32px rgba(226, 221, 215, 0.24);
   transform: translate(-50%, 0);
 
@@ -70,7 +72,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 14px;
   color: #9b9997;
 }
 
@@ -118,7 +120,7 @@
 }
 
 .login__enter button {
-  width: 340px;
+  width: 100%;
   height: 68px;
   margin-top: 45px;
   margin-bottom: 15px;
@@ -170,7 +172,8 @@
 
 @media (max-width: $desktop-width) {
   .login {
-    width: 442px;
+    width: 58%;
+    max-width: 442px;
     padding-right: 50px;
     padding-left: 50px;
 
@@ -192,16 +195,15 @@
 
 @media (max-width: $tablet-width) {
   .login {
-    left: 160px;
+    left: 50%;
 
-    width: 270px;
     height: 470px;
     padding-top: 120px;
     padding-right: 15px;
     padding-left: 15px;
 
     background-image: url("../img/log-in-bg__mobile.png");
-    background-size: auto 84px;
+    background-size: 100% 84px;
 
 
     @media (min-resolution: $retina-dpi),
@@ -211,7 +213,6 @@
   }
 
   .login__enter button {
-    width: 240px;
     margin-top: 30px;
   }
 

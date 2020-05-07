@@ -14,8 +14,12 @@ body {
   background-color: #ffffff;
 }
 
-main {
+.content {
   flex: 1;
+}
+
+.content--menu-open {
+  display: none;
 }
 
 .body--modal {
@@ -62,6 +66,10 @@ button {
 
 .wrap-bg {
   background-color: #000000;
+}
+
+.wrap-bg--menu-open {
+  display: none;
 }
 
 .catalog-container {

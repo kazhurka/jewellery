@@ -172,6 +172,7 @@
     var modalWrap = document.querySelector('.modal-wrap');
     var body = document.querySelector('body');
 
+
     if (!(modalLogin && modalWrap && addButton && closeButton && body)) {
       return;
     }
@@ -181,11 +182,13 @@
       modalLogin.classList.remove('login--active');
       body.classList.remove('body--modal');
     };
+
     var removeModalHandlers = function () {
       document.removeEventListener('keydown', modalKeyCloseHandler);
       closeButton.removeEventListener('click', modalMouseCloseHandler);
       document.removeEventListener('click', modalOverClickHandler);
     };
+
     var modalKeyCloseHandler = function (evtEsc) {
       if (evtEsc.key === ESCAPE) {
         closeModal();
@@ -214,7 +217,9 @@
       closeButton.addEventListener('click', modalMouseCloseHandler);
       modalWrap.addEventListener('click', modalOverClickHandler);
       document.addEventListener('keydown', modalKeyCloseHandler);
+
     };
+
     if (addButton) {
       addButton.addEventListener('click', modalOpenHandler);
     }
@@ -224,15 +229,28 @@
   (function () {
     var headerMain = document.querySelector('.main-header');
     var navToggle = document.querySelector('.main-header__menu-button');
-    if (!(headerMain && navToggle)) {
+    var main = document.querySelector('.content');
+    var footerWrap = document.querySelector('.wrap-bg');
+    var loginButton = document.querySelector('.main-header__user-link--login');
+
+    if (!(headerMain && navToggle && main && footerWrap && loginButton)) {
       return;
     }
     headerMain.classList.remove('main-header--nojs');
+    var closeMenu = function () {
+      headerMain.classList.remove('main-header--open');
+      main.classList.remove('content--menu-open');
+    };
     navToggle.addEventListener('click', function () {
       if (headerMain.classList.contains('main-header--open')) {
-        headerMain.classList.remove('main-header--open');
+        closeMenu();
+        footerWrap.classList.remove('wrap-bg--menu-open');
+        loginButton.removeEventListener('click', closeMenu);
       } else {
+        main.classList.add('content--menu-open');
+        footerWrap.classList.add('wrap-bg--menu-open');
         headerMain.classList.add('main-header--open');
+        loginButton.addEventListener('click', closeMenu);
       }
     });
   })();

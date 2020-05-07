@@ -71,6 +71,7 @@
 }
 
 .faq__button {
+
   position: absolute;
   right: 45px;
 
@@ -79,6 +80,8 @@
 }
 
 .faq__button button {
+  cursor: pointer;
+  outline: none;
   width: 20px;
   height: 20px;
 }
